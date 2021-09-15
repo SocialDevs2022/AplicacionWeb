@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+/*HEADER*/
+.header{
+    width: 1350px;
+    margin: 0px auto;
+}
+.titulo-logo2{
+    margin: 0 auto;
+    background: #F0D9FF;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.titulo-logo2 .titulo2{
+    float: right;
+    background-color: #F0D9FF;
+    height: 180px;
+    width: 700px;
+}
+
+.titulo-logo2 .titulo2 h1{
+    text-decoration: none;
+    color: #d894df;
+    font-size: 35px;
+    display: inline-block;
+    padding: 50px ;
+    font-weight: 300;
+    font-family: inherit;
+}
+
+.titulo-logo2 .logo2{
+    float: left;
+    background-color: #F0D9FF;
+    height: 180px;
+    
+}
+
+.titulo-logo2 .logo2 img{
+    float: right;
+}
+
+.menu-clientes{
+    margin-bottom: 40px;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: left;
+    padding: 10px 0;
+    background: #F4F9F9;
+    margin: 0px auto;
+}
+
+.menu-clientes ul{
+    list-style: none;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.menu-clientes ul li{
+    display: inline-block;
+}
+
+.menu-clientes ul li a{
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #81817eee;
+}
+
+.menu-clientes ul li a:hover{
+    color: #f0b6ed;
+}
+
+.section{    
+    float: center;
+    width: 68%;
+    border-radius: 15px;
+    box-shadow: 1px 0 4px rgb(0, 0,0,.2);
+    margin-bottom: 15px;
+    padding: 15px;
+    margin: 0px auto;
+    background-color: #C7FFD8;
+}
+
+.form{
+    float: center;
+    background-color: #CFFFFE;
+}
+.legend{
+    text-align: center;
+    
+}
+.campo{
+    border-radius: 10px;
+    padding: 6px;
+    border: 1px solid;
+}
+
+.footer{
+    text-align: center;
+    color: #8813cc;
+    background: #d3a8d8;
+    margin-bottom: 15px;
+    box-shadow: 1px 0 4px rgb(0, 0,0,.2);
+    padding: 30px;
+}

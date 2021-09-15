@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Clientes - Dulces Creaciones</title>
+        <link href="CSS/clientes.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="titulo-logo2">
+                <div class="titulo2">
+                    <h1><em>Registro de Clientes</em></h1>
+                </div>
+
+                <div class="logo2">
+                    <img src="Imagenes/Logo.png" alt="" width="600" height="180">
+                </div>  
+            </div>
+            
+            <div class="menu-clientes">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Contactenos</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <section class="section">
+                <form class="form">
+                    <fieldset>
+                        <legend class="legend">Datos Personales</legend><br>
+                        <label for="nombre">Nombre</label><br>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe nombre" 
+                        required="true" class="campo"><br><br>
+                        
+                        <label for="apellido">Apellido</label><br>
+                        <input type="text" id="apellido" name="apellido" placeholder="Escribe apellido" 
+                        required="true" class="campo"><br><br>
+
+                        <label for="documento">Tipo Documento</label><br>
+                        <select id="documento" name="documento">
+                            <option value="CC" selected>CC</option>
+                            <option value="CE">CE</option>
+                            <option value="PP">PP</option>
+                        </select><br><br>
+
+                        <label for="numdoc">No. Documento</label><br>
+                        <input type="number" id="numdoc" name="numdoc" class="campo"><br><br>
+
+                        <label>Genero</label><br>
+                        <input type="radio" id="femenino" name="genero" value="femenino">
+                        <label for="femenino">femenino</label><br>
+                        <input type="radio" id="masculino" name="genero" value="masculino">
+                        <label for="masculino">masculino</label><br><br>
+
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email" class="campo"><br><br>
+
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpiar">
+
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <h2>Todos los derechos reservados - MISIONTIC 2022</h2>
+        </footer>
+
+    </body>
+</html>
