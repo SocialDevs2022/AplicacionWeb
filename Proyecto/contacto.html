@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        
+            *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        
+        body{
+            background-color: #EB92BE;
+            }
+        .titulo{
+            text-align: center;
+            font-size: 40px;
+            margin: 10px;
+            color: #fff;
+        }
+
+        .navegacion{
+            width: 100%;
+            margin: 30px auto;
+            background-color: #f8e2ea;
+        }
+
+        .navegacion ul{
+            list-style: none;
+
+        }
+        
+        .menu > li{
+            position: relative;
+            display: inline-block;
+        }
+
+        .menu > li > a{
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+
+        .menu li a:hover{
+            color: #FFEF78;
+            transition: all 0.3s;
+
+        }
+
+        .submenu{
+            position: absolute;
+            background-color: rgba(253, 186, 252, 0.233);
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 1.5s;
+        }
+        .submenu li a{
+            display: block;
+            padding: 15px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .menu li:hover .submenu{
+            visibility: visible;
+            opacity: 1;
+            cursor: pointer;
+        }
+        form{
+            background-color: rgba(255, 255, 255, 0.466);
+            border-radius: 6px;
+            color: #999;
+            padding: 60px auto;
+            margin: 15px auto;
+            width: 600px;
+            font-size: 24px;
+        }
+        input, textarea{
+            margin: auto;
+            outline: none;
+            
+        }
+        
+        .campo{
+            padding: 5px;
+            border-radius: 6px;
+            border: 1px solid;
+            outline: none;
+        }
+        .campo:focus{
+            border-color: #cdb4db;
+        }
+        .enviar{
+            padding: 5px;
+            background-color: #f72585;
+            border: none;
+            border-radius: 6px;
+            font-size: 24px;
+            color: #fff;
+            margin: 10px auto;
+            display: inline-block;
+            cursor: pointer;
+            width: 100%;
+           
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+
+    <header style="background-color: #cdb4db;">
+        <div class="titulo">
+            <h1>Freya Dulces Creaciones</h1>
+            <h2>Siempre en contacto</h2>                  
+        </div>
+        <nav class="navegacion">
+            <div>
+                <ul class="menu">
+                    <li><a href="index.html"  style="padding: 5px;">Inicio</a></li> |
+                    <li><a href="galeria.html" style="padding: 5px;">Galeria</a>
+                        <ul class="submenu">
+                            <li><a style="padding: 15px;" href="#">Choco Fresas</a></li>
+                            <li><a style="padding: 15px;" href="#">Corazones</a></li>
+                            <li><a style="padding: 15px;" href="#">Licores</a></li>
+                            <li><a style="padding: 15px;" href="#">Choco Sorpresas</a></li>
+                            <li><a style="padding: 15px;" href="#">Figuras Especiales</a></li>
+                            <li><a style="padding: 15px;" href="#">Cajas</a></li>
+                            </ul></li> |
+                    <li><a href="tienda.html"  style="padding: 5px;">Tienda</a></li> |
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    
+    
+    <form>
+            <fieldset style="border: none; padding: 10px;">
+                <legend style="text-align: center;">Enviar un mensaje</legend>
+                
+                <label for="asunto">Asunto:</label><br>
+                <select id="asunto" name="asunto" class="campo">
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="Queja">Queja</option>
+                    <option value="Felicitacion">Felicitacion</option>
+                </select>   <br><br>
+
+                <label for="correo">Correo:</label><br>
+                <input type="email" id="correo" name="Correo" class="campo"><br><br>
+
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" class="campo"><br><br>
+
+                <label for="telefono">Telefono:</label><br>
+                <input type="number" id="telefono" name="telefono" class="campo"><br><br>
+
+                <label for="mensaje">Dejenos su mensaje</label><br>
+                <textarea id="mensaje" name="mensaje" rows="15" cols="70" class="campo" style="width: 100%;"></textarea><br><br>
+
+                <input type="submit" id="Enviar" name="Enviar" class="enviar">
+                
+        </fieldset>
+    
+    </form>
+    <hr />
+    <footer style="text-align: center; background-color: #cdb4db; padding: 20px">
+        <h2>Para mayor información escribe al WhatsApp 30000000</h2>
+    </footer>
+
+</body>
+</html>
