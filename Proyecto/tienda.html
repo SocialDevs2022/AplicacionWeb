@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda - Freya</title>
-    <link href="CSS/tienda.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="CSS/estilos.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -14,21 +15,24 @@
             <h1 style="text-align: right; margin: 2% 20% auto; color: black; float: right; font-size: 80px">Tienda</h1>
         </div>
         <hr>
-        <nav style="background-color: #efd3d7; text-align: center; padding: 10px">
-            <a href="index.html">Inicio</a> ||
-            <a href="#">Fresas</a> ||
-            <a href="#">Corazones</a> ||
-            <a href="#">Licores</a> ||
-            <a href="#">Choco Sorpresas</a> ||
-            <a href="#">Paletas</a> ||
-            <a href="#">Figuras</a> ||
-            <a href="#">Cajas</a> ||
-            <a href="#">Anchetas</a> ||
-            <a href="#">Desayunos</a> ||
-            <a href="#">Globos</a> ||
-            <a href="#">Rosas</a> ||
-            <a href="/galeria.html">Galeria</a>
-            <a href="contacto.html">Contactenos</a>
+        <nav class="navegacion">
+            <div>
+                <ul class="menu">
+                    <li><a href="index.html"  style="padding: 5px;">Inicio</a></li> |
+                    <li><a href="galeria.html" style="padding: 5px;">Galeria</a>
+                        <ul class="submenu">
+                            <li><a style="padding: 15px;" href="#">Choco Fresas</a></li>
+                            <li><a style="padding: 15px;" href="#">Corazones</a></li>
+                            <li><a style="padding: 15px;" href="#">Licores</a></li>
+                            <li><a style="padding: 15px;" href="#">Choco Sorpresas</a></li>
+                            <li><a style="padding: 15px;" href="#">Figuras Especiales</a></li>
+                            <li><a style="padding: 15px;" href="#">Cajas</a></li>
+                            </ul></li> |
+                    <li><a href="tienda.html"  style="padding: 5px;">Tienda</a></li> |
+                    <li><a href="registroClientes.html"  style="padding: 5px;">Registrese</a></li> |
+                    <li><a href="contacto.html"  style="padding: 5px;">Contactenos</a></li>  |
+                </ul>
+            </div>
         </nav>
     </header>
     <main width: 100%>
@@ -58,7 +62,7 @@
         </div>
     </main>
     <footer style="background-color: #cdb4db; width: 100%; height: 100px; margin-top: 100px; text-align: center">
-        <h1>WhatSapp 310000000 </h1>
+        <h2>Para mayor información escribe al WhatsApp <i class="bi bi-whatsapp">30000000</i></h2>
     </footer>
 </body>
 </html>
