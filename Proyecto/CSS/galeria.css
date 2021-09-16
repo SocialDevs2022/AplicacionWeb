@@ -1,0 +1,23 @@
+.header{
+    width: 100%;
+    background-color: #b5838d;
+    height: 200px;
+}
+
+h1{
+    color: white;
+    font-size: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+nav{   
+    background-color:ffb4a2;
+
+}
