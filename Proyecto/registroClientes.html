@@ -48,43 +48,45 @@
         </header>
 
         <main>
-            <section class="section">
-                <form class="form">
-                    <fieldset>
-                        <legend class="legend">Datos Personales</legend><br>
-                        <label for="nombre">Nombre</label><br>
-                        <input type="text" id="nombre" name="nombre" placeholder="Escribe nombre" 
-                        required="true" class="campo"><br><br>
-                        
-                        <label for="apellido">Apellido</label><br>
-                        <input type="text" id="apellido" name="apellido" placeholder="Escribe apellido" 
-                        required="true" class="campo"><br><br>
+            <div class="fondo" style="background-image: url(Imagenes/manoschocoles.png);">
+                <section class="section">
+                    <form class="form">
+                        <fieldset>
+                            <legend class="legend">Datos Personales</legend><br>
+                            <label class="label" for="nombre" >Nombre</label><br>
+                            <input type="text" id="nombre" name="nombre" placeholder="Escribe nombre" 
+                            required="true" class="campo"><br><br>
+                            
+                            <label class="label" for="apellido">Apellido</label><br>
+                            <input type="text" id="apellido" name="apellido" placeholder="Escribe apellido" 
+                            required="true" class="campo"><br><br>
 
-                        <label for="documento">Tipo Documento</label><br>
-                        <select id="documento" name="documento">
-                            <option value="CC" selected>CC</option>
-                            <option value="CE">CE</option>
-                            <option value="PP">PP</option>
-                        </select><br><br>
+                            <label class="label" for="documento">Tipo Documento</label><br>
+                            <select id="documento" name="documento" class="campo">
+                                <option class="label" value="CC" selected>CC</option>
+                                <option class="label" value="CE">CE</option>
+                                <option class="label" value="PP">PP</option>
+                            </select><br><br>
 
-                        <label for="numdoc">No. Documento</label><br>
-                        <input type="number" id="numdoc" name="numdoc" class="campo"><br><br>
+                            <label class="label" for="numdoc">No. Documento</label><br>
+                            <input type="number" id="numdoc" name="numdoc" class="campo"><br><br>
 
-                        <label>Genero</label><br>
-                        <input type="radio" id="femenino" name="genero" value="femenino">
-                        <label for="femenino">femenino</label><br>
-                        <input type="radio" id="masculino" name="genero" value="masculino">
-                        <label for="masculino">masculino</label><br><br>
+                            <label class="label">Genero</label><br>
+                            <input type="radio" id="femenino" name="genero" value="femenino" class="campo">
+                            <label for="femenino">femenino</label><br>
+                            <input type="radio" id="masculino" name="genero" value="masculino" class="campo">
+                            <label for="masculino">masculino</label><br><br>
 
-                        <label for="email">Email</label><br>
-                        <input type="email" id="email" name="email" class="campo"><br><br>
+                            <label class="label" for="email">Email</label><br>
+                            <input type="email" id="email" name="email" class="campo"><br><br>
 
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpiar">
+                            <input class="botones" type="submit" value="Enviar">
+                            <input class="botones" type="reset" value="Limpiar"><br><br>
 
-                    </fieldset>
-                </form>
-            </section>
+                        </fieldset>
+                    </form>
+                </section>
+            </div>
         </main>
 
         <footer class="footer">
