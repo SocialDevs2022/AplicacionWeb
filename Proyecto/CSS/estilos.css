@@ -249,7 +249,15 @@
         .menu-clientes ul li a:hover{
             color: #f0b6ed;
         }
-        
+
+        .fondo{
+            width: 98%;
+            border-radius: 15px;
+            box-shadow: 1px 0 4px rgb(0, 0,0,.2);
+            padding: 15px;
+            margin: 0px auto;
+            
+        }
         .section{    
             float: center;
             width: 68%;
@@ -262,17 +270,33 @@
         }
         
         .form{
-            float: center;
             background-color: #CFFFFE;
         }
         .legend{
             text-align: center;
             
         }
+        .label{
+            margin: 55px;
+        }
         .campo{
             border-radius: 10px;
-            padding: 6px;
+            padding: 5px;
             border: 1px solid;
+            margin: 5px 55px;
+        }
+
+        .botones{
+            margin: 5px 80px;
+            font-size:  20px;
+            background-color: #f0dbef;
+            color: cornflowerblue;
+            padding: 5px 8px;
+        }
+        
+        .botones:hover{
+            color: rgb(0, 60, 255);
+            background-color: #f1bbbb;
         }
         
         .footer{
