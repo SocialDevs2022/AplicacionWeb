@@ -1,99 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Clientes - Dulces Creaciones</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link href="CSS/estilos.css" rel="stylesheet">
-    </head>
-    <body>
-        <header class="header">
-            <input type="checkbox" id="boton-menu">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clientes - Dulces Creaciones</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link href="CSS/estilos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="boton-menu" />
       <label for="boton-menu"><i class="bi bi-list"></i></label>
       <nav class="navegacion">
         <div>
-            <ul class="menu">
-                <li><a href="contacto.html"  style="padding: 5px;">Contactenos</a></li> |
-                <li><a href="galeria.html" style="padding: 5px;">Galeria</a>
-                    <ul class="submenu">
-                        <li><a style="padding: 15px;" href="#">Choco Fresas</a></li>
-                        <li><a style="padding: 15px;" href="#">Corazones</a></li>
-                        <li><a style="padding: 15px;" href="#">Licores</a></li>
-                        <li><a style="padding: 15px;" href="#">Choco Sorpresas</a></li>
-                        <li><a style="padding: 15px;" href="#">Figuras Especiales</a></li>
-                        <li><a style="padding: 15px;" href="#">Cajas</a></li>
-                        </ul></li> |
-                <li><a href="tienda.html"  style="padding: 5px;">Tienda</a></li> |
-                <li><a href="registroClientes.html"  style="padding: 5px;">Registrese</a></li>  |
-            </ul>
+          <ul class="menu">
+            <li>
+              <a href="contacto.html" style="padding: 5px">Contactenos</a>
+            </li>
+            |
+            <li>
+              <a href="galeria.html" style="padding: 5px">Galeria</a>
+              <ul class="submenu">
+                <li><a style="padding: 15px" href="#">Choco Fresas</a></li>
+                <li><a style="padding: 15px" href="#">Corazones</a></li>
+                <li><a style="padding: 15px" href="#">Licores</a></li>
+                <li><a style="padding: 15px" href="#">Choco Sorpresas</a></li>
+                <li>
+                  <a style="padding: 15px" href="#">Figuras Especiales</a>
+                </li>
+                <li><a style="padding: 15px" href="#">Cajas</a></li>
+              </ul>
+            </li>
+            |
+            <li><a href="tienda.html" style="padding: 5px">Tienda</a></li>
+            |
+            <li>
+              <a href="registroClientes.html" style="padding: 5px"
+                >Registrese</a
+              >
+            </li>
+            |
+          </ul>
         </div>
-    </nav>
-            <div class="titulo-logo2">
-                <div class="titulo2">
-                    <h1><em>Registro de Clientes</em></h1>
-                </div>
+      </nav>
+      <div class="titulo-logo2">
+        <div class="titulo2">
+          <h1><em>Registro de Clientes</em></h1>
+        </div>
 
-                <div class="logo2">
-                    <img src="Imagenes/Logo.png" alt="" width="600" height="180">
-                </div>  
-            </div>
-            
-            <div class="menu-clientes">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Galeria</a></li>
-                    <li><a href="#">Contactenos</a></li>
-                </ul>
-            </div>
-        </header>
+        <div class="logo2">
+          <img src="Imagenes/Logo.png" alt="" width="600" height="180" />
+        </div>
+      </div>
 
-        <main>
-            <div class="fondo" style="background-image: url(Imagenes/manoschocoles.png);">
-                <section class="section">
-                    <form class="form">
-                        <fieldset>
-                            <legend class="legend">Datos Personales</legend><br>
-                            <label class="label" for="nombre" >Nombre</label><br>
-                            <input type="text" id="nombre" name="nombre" placeholder="Escribe nombre" 
-                            required="true" class="campo"><br><br>
-                            
-                            <label class="label" for="apellido">Apellido</label><br>
-                            <input type="text" id="apellido" name="apellido" placeholder="Escribe apellido" 
-                            required="true" class="campo"><br><br>
+      <div class="menu-clientes">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#">Galeria</a></li>
+          <li><a href="#">Contactenos</a></li>
+        </ul>
+      </div>
+    </header>
 
-                            <label class="label" for="documento">Tipo Documento</label><br>
-                            <select id="documento" name="documento" class="campo">
-                                <option class="label" value="CC" selected>CC</option>
-                                <option class="label" value="CE">CE</option>
-                                <option class="label" value="PP">PP</option>
-                            </select><br><br>
+    <main>
+      <div
+        class="fondo"
+        style="background-image: url(Imagenes/manoschocoles.png)"
+      >
+        <section class="section">
+          <form class="form">
+            <fieldset>
+              <legend class="legend">Datos Personales</legend>
+              <br />
+              <label class="label" for="nombre">Nombre</label><br />
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Escribe nombre"
+                required="true"
+                class="campo"
+              /><br /><br />
 
-                            <label class="label" for="numdoc">No. Documento</label><br>
-                            <input type="number" id="numdoc" name="numdoc" class="campo"><br><br>
+              <label class="label" for="apellido">Apellido</label><br />
+              <input
+                type="text"
+                id="apellido"
+                name="apellido"
+                placeholder="Escribe apellido"
+                required="true"
+                class="campo"
+              /><br /><br />
 
-                            <label class="label">Genero</label><br>
-                            <input type="radio" id="femenino" name="genero" value="femenino" class="campo">
-                            <label for="femenino">femenino</label><br>
-                            <input type="radio" id="masculino" name="genero" value="masculino" class="campo">
-                            <label for="masculino">masculino</label><br><br>
+              <label class="label" for="documento">Tipo Documento</label><br />
+              <select id="documento" name="documento" class="campo">
+                <option class="label" value="CC" selected>CC</option>
+                <option class="label" value="CE">CE</option>
+                <option class="label" value="PP">PP</option></select
+              ><br /><br />
 
-                            <label class="label" for="email">Email</label><br>
-                            <input type="email" id="email" name="email" class="campo"><br><br>
+              <label class="label" for="numdoc">No. Documento</label><br />
+              <input
+                type="number"
+                id="numdoc"
+                name="numdoc"
+                class="campo"
+              /><br /><br />
 
-                            <input class="botones" type="submit" value="Enviar">
-                            <input class="botones" type="reset" value="Limpiar"><br><br>
+              <label class="label">Genero</label><br />
+              <input
+                type="radio"
+                id="femenino"
+                name="genero"
+                value="femenino"
+                class="campo"
+              />
+              <label for="femenino">femenino</label><br />
+              <input
+                type="radio"
+                id="masculino"
+                name="genero"
+                value="masculino"
+                class="campo"
+              />
+              <label for="masculino">masculino</label><br /><br />
 
-                        </fieldset>
-                    </form>
-                </section>
-            </div>
-        </main>
+              <label class="label" for="email">Email</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="campo"
+              /><br /><br />
 
-        <footer class="footer">
-            <h2>Para mayor información escribe al WhatsApp <i class="bi bi-whatsapp">30000000</i></h2>
-        </footer>
+              <input class="botones" type="submit" value="Enviar" />
+              <input class="botones" type="reset" value="Limpiar" /><br /><br />
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </main>
 
-    </body>
+    <footer class="footer">
+      <h2>
+        Para mayor información escribe al WhatsApp
+        <i class="bi bi-whatsapp">30000000</i>
+      </h2>
+    </footer>
+  </body>
 </html>
