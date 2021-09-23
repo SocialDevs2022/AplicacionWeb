@@ -25,6 +25,12 @@ h2{
     text-align: center;
 }
 
+h2.titulofooter{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: white;
+}
+
 
 
 /*  Estilos  contacto  */
@@ -194,6 +200,18 @@ a:link{
     border-radius: 30px;           
     width: 800px;
     height: 600px;
+    object-fit: cover;
+}
+
+.IMG_footer{
+    /*display: block;
+    margin: 50px auto;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #f7d1cd;
+    border-radius: 30px;*/         
+    width: 40px;
+    height: 40px;
     object-fit: cover;
 }
 
@@ -380,11 +398,18 @@ body{
     background-color: #f1bbbb;
 }
 
+
 .footer{
+    background-color: #735D78;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 30px;
+    /*
     text-align: center;
     color: #8813cc;
     background: #d3a8d8;
     margin-bottom: 15px;
     box-shadow: 1px 0 4px rgb(0, 0,0,.2);
     padding: 30px;
+    */
 }
