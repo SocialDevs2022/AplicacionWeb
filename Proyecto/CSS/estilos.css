@@ -19,8 +19,33 @@ h2{
 
 h2.titulofooter{
     font-family: 'Montserrat';
-    font-size: 20px;
+    font-size: 15px;
     color: white;
+}
+
+#iconos{
+    float: left;
+}
+
+#textofooter{
+    float: right;
+}
+
+.footer{
+    background-color: #b5838d;
+    background-image: url("/Imagenes/fondo/footer.jpeg");
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 30px;
+    /*
+    text-align: center;
+    color: #8813cc;
+    background: #d3a8d8;
+    margin-bottom: 15px;
+    box-shadow: 1px 0 4px rgb(0, 0,0,.2);
+    padding: 30px;
+    */
 }
 
 div.contenedor-header{
@@ -415,17 +440,3 @@ body{
 }
 
 
-.footer{
-    background-color: #735D78;
-    margin-bottom: 15px;
-    text-align: center;
-    padding: 30px;
-    /*
-    text-align: center;
-    color: #8813cc;
-    background: #d3a8d8;
-    margin-bottom: 15px;
-    box-shadow: 1px 0 4px rgb(0, 0,0,.2);
-    padding: 30px;
-    */
-}
