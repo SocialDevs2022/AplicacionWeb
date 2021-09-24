@@ -5,8 +5,6 @@
 }
 /* Estilos para todos los encabezados */
 
-
-
 h1{
     /* color: white; */
     font-size: 60px;
@@ -21,7 +19,10 @@ h2{
 
 div.contenedor-header{
     display: flex;
-    background-color: #b5838d;
+    background-image: url(/Imagenes/fondo/pincelada.png);
+    background-color: #f9f0f2;
+   
+    /*background-color: #b5838d;*/
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
@@ -34,7 +35,7 @@ div.contenedor-titulo{
 }
 
 div.contenedor-menu{
-    margin-top: 110px;
+    margin-top: 50px;
     
        
     
