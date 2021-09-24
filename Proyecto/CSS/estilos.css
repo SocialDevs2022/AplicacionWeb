@@ -5,21 +5,15 @@
 }
 /* Estilos para todos los encabezados */
 
-header{
-    width: 100%;
-    background-color: #b5838d;
-    height: 200px;
-}
-
 h1{
-    color: white;
+    /* color: white; */
     font-size: 60px;
     margin-top: 20px;
     text-align: center;
 }
 
 h2{
-    color: white;
+    /* color: white; */
     text-align: center;
 }
 
@@ -29,33 +23,52 @@ h2.titulofooter{
     color: white;
 }
 
+div.contenedor-header{
+    display: flex;
+    background-image: url(/Imagenes/fondo/pincelada.png);
+    background-color: #f9f0f2;
+   
+    /*background-color: #b5838d;*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 200px;
+}
 
-
-/*  Estilos  contacto  */
-
-.titulo{
-    text-align: center;
-    font-size: 40px;
-    margin: 10px;
+div.contenedor-titulo{
+    margin-top: 30px;
     color: #fff;
 }
+
+div.contenedor-menu{
+    margin-top: 50px;
+    
+       
+    
+}
+
 
 .navegacion{
     width: 100%;
     margin: 30px auto;
-    background-color: #f8e2ea;
+    /* background-color: #f8e2ea; */
 }
 
 .navegacion ul{
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
+       
 
 }
 
 .menu > li{
     display: inline-block;
+    margin-left: 50px;
+    border-left: black 2px solid;
+    
+    
+
 }
 
 .menu > li > a{
@@ -76,17 +89,20 @@ h2.titulofooter{
     visibility: hidden;
     opacity: 0;
     transition: opacity 1.5s;
+    
 }
 .submenu li a{
     display: block;
     padding: 15px;
     color: #fff;
     text-decoration: none;
+    
 }
 .menu li:hover .submenu{
     visibility: visible;
     opacity: 1;
     cursor: pointer;
+    display: block;
 }
 
 /*menu responsive*/
@@ -111,11 +127,12 @@ header label:hover{
     header label{
         display: block;
     }
+    
     .navegacion{
         position: absolute;
         background: #b5838d;
         width: 70%;
-        margin-left: -70%;
+        margin-left: 70%;
     }
     .navegacion ul{
         flex-direction: column;
@@ -124,9 +141,10 @@ header label:hover{
         border-top: 1px solid #fff;
     }
     #boton-menu:checked ~ .navegacion{
-        margin: 0;
+        margin-left: -70%;
 
     }
+    
 }
 
 form.contacto{

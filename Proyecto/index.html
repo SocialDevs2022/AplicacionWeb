@@ -14,50 +14,116 @@
   </head>
   <body>
     <header>
-      <h1>FREYA</h1>
-      <h2>Dulces Creaciones</h2>
-      <input type="checkbox" id="boton-menu">
-      <label for="boton-menu"><i class="bi bi-list"></i></label>
-      <nav class="navegacion">
-        <div>
-            <ul class="menu">
-                <li><a href="contacto.html"  style="padding: 5px;">Contactenos</a></li> |
-                <li><a href="galeria.html" style="padding: 5px;">Galeria</a>
-                    <ul class="submenu">
-                        <li><a style="padding: 15px;" href="/GaleriaHTML/chocoFresas.html">Choco Fresas</a></li>
-                        <li><a style="padding: 15px;" href="/GaleriaHTML/corazones.html">Corazones</a></li>
-                        <li><a style="padding: 15px;" href="/GaleriaHTML/licores.html">Licores</a></li>
-                        <li><a style="padding: 15px;" href="/GaleriaHTML/chocoSorpresa.html">Choco Piñata</a></li>
-                        <li><a style="padding: 15px;" href="/GaleriaHTML/tortaPaleta.html">Torta Paleta</a></li>
-                        <li><a style="padding: 15px;" href="/GaleriaHTML/variedad.html">Figuras Especiales</a></li>
-                        <li><a style="padding: 15px;" href="#">Cajas</a></li>
-                        </ul></li> |
-                <li><a href="tienda.html"  style="padding: 5px;">Tienda</a></li> |
-                <li><a href="registroClientes.html"  style="padding: 5px;">Registrese</a></li>  |
-            </ul>
+      
+      <div class="contenedor-header">
+        <div class="contenedor-logo">
+          <img src="Imagenes/Logo.png" height="180px" alt="Freya" style="float: left" /> 
         </div>
-    </nav>
-      <hr />
+        <!--
+        <div class="contenedor-titulo">
+          <h1>FREYA</h1>
+          <h2>Dulces Creaciones</h2>
+        </div>
+        -->
+        <div class="contenedor-menu">
+          <input type="checkbox" id="boton-menu" />
+          <label for="boton-menu"><i class="bi bi-list"></i></label>
+          <nav class="navegacion">
+            <div>
+              <ul class="menu">
+                <li>
+                  <a href="contacto.html" style="padding: 5px">Contactenos</a>
+                </li>
+                
+                <li>
+                  <a href="galeria.html" style="padding: 5px">Galeria</a>
+                  <ul class="submenu">
+                    <li>
+                      <a
+                        style="padding: 15px"
+                        href="/GaleriaHTML/chocoFresas.html"
+                        >Choco Fresas</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        style="padding: 15px"
+                        href="/GaleriaHTML/corazones.html"
+                        >Corazones</a
+                      >
+                    </li>
+                    <li>
+                      <a style="padding: 15px" href="/GaleriaHTML/licores.html"
+                        >Licores</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        style="padding: 15px"
+                        href="/GaleriaHTML/chocoSorpresa.html"
+                        >Choco Piñata</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        style="padding: 15px"
+                        href="/GaleriaHTML/tortaPaleta.html"
+                        >Torta Paleta</a
+                      >
+                    </li>
+                    <li>
+                      <a style="padding: 15px" href="/GaleriaHTML/variedad.html"
+                        >Figuras Especiales</a
+                      >
+                    </li>
+                    <li><a style="padding: 15px" href="#">Cajas</a></li>
+                  </ul>
+                </li>
+                
+                <li><a href="tienda.html" style="padding: 5px">Tienda</a></li>
+                
+                <li>
+                  <a href="registroClientes.html" style="padding: 5px"
+                    >Registrese</a
+                  >
+                </li>
+                
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
     </header>
-    <main> 
+
+    <main>
       <section class="slider">
         <ul>
-          <li><img class="IMG_index" src="Imagenes/osoSorpresa.jpeg" alt=""></li>
-          <li><img class="IMG_index" src="Imagenes/15Fresas.jpeg" alt=""></li>
-          <li><img class="IMG_index" src="Imagenes/8fresas_Cerveza.jpeg" alt="" style="width: 400px"></li>
-          <li><img class="IMG_index" src="Imagenes/caja1.jpeg" alt=""></li>
+          <li>
+            <img class="IMG_index" src="Imagenes/osoSorpresa.jpeg" alt="" />
+          </li>
+          <li><img class="IMG_index" src="Imagenes/15Fresas.jpeg" alt="" /></li>
+          <li>
+            <img
+              class="IMG_index"
+              src="Imagenes/8fresas_Cerveza.jpeg"
+              alt=""
+              style="width: 400px"
+            />
+          </li>
+          <li><img class="IMG_index" src="Imagenes/caja1.jpeg" alt="" /></li>
         </ul>
       </section>
-    
+
       <section>
         <article>
-          <h2 style="text-align: left; margin: 50px ">Quienes Somos</h2>
-          <p style="text-align: left;  margin: 50px">
-            Freya es un emprendimiento que nace el 14 de febrero del 2021, con la intención de llenar
-            de alegría, felicidad y elegancia; los lugares a los que llegan los productos elaborados por nosotros.
+          <h2 style="text-align: left; margin: 50px">Quienes Somos</h2>
+          <p style="text-align: left; margin: 50px">
+            Freya es un emprendimiento que nace el 14 de febrero del 2021, con
+            la intención de llenar de alegría, felicidad y elegancia; los
+            lugares a los que llegan los productos elaborados por nosotros.
           </p>
         </article>
-      </section> 
+      </section>
     </main>
     <hr />
     <footer class="footer">
