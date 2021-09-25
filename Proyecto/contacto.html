@@ -26,8 +26,8 @@
         <nav class="navegacion">
           <div>
             <ul class="menu">
-              <li><a href="/index.html" style="padding: 5px">Inicio</a>
-              <li><a href="/galeria.html" style="padding: 5px">Galeria</a>
+              <li><a href="/index.html">Inicio</a>
+              <li><a href="/galeria.html">Galeria</a>
                 <ul class="submenu">
                   <li><a style="padding: 15px" href="/GaleriaHTML/chocoFresas.html">Choco Fresas</a></li>
                   <li><a style="padding: 15px" href="/GaleriaHTML/corazones.html" >Corazones</a></li>
@@ -38,9 +38,9 @@
                   <li><a style="padding: 15px" href="#">Cajas</a></li>
                 </ul>
               </li>
-              <li><a href="/tienda.html" style="padding: 5px">Tienda</a></li>
-              <li><a href="/registroClientes.html" style="padding: 5px">Registrate</a></li>
-              <li><a href="/contacto.html" style="padding: 5px">Contáctanos</a></li>
+              <li><a href="/tienda.html">Tienda</a></li>
+              <li><a href="/registroClientes.html">Registrate</a></li>
+              <li><a href="/contacto.html">Contáctanos</a></li>
             </ul>
           </div>
         </nav>
@@ -49,27 +49,27 @@
   </header>
     
   <main>
+    <section class="tituloFormulario">
+      <h2>Contáctanos</h2>
+    </section>
     <form class="contacto">
-            <fieldset style="border: none; padding: 10px; background-color: #cdb4db5e; border-radius: 2%;">
-                <legend style="text-align: center;">Enviar un mensaje</legend>
-                
-                <label for="asunto">Asunto:</label><br>
-                <input type="text" id="asunto" name="asunto" class="campo">
-                   <br><br>
-
-                <label for="correo">Correo:</label><br>
-                <input type="email" id="correo" name="Correo" class="campo"><br><br>
-
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre" class="campo"><br><br>
-
-                <label for="telefono">Telefono:</label><br>
-                <input type="number" id="telefono" name="telefono" class="campo"><br><br>
-
-                <label for="mensaje">Dejenos su mensaje</label><br>
-                <textarea id="mensaje" name="mensaje" rows="15" cols="70" class="campo" style="width: 80%;"></textarea><br><br>
-
-                <input type="submit" id="Enviar" name="Enviar" class="enviar">
+      <div class="grupo">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" class="campo">
+      </div>
+      <div class="grupo">
+        <label for="correo">Email</label>
+        <input type="email" id="correo" name="Correo" class="campo">
+      </div>
+      <div class="grupo">
+        <label for="telefono">Telefono/Celular</label><br>
+        <input type="number" id="telefono" name="telefono" class="campo">
+      </div>
+      <div class="grupo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="15" cols="70" class="campo"></textarea><br><br>
+      </div>
+      <input type="submit" id="Enviar" name="Enviar" class="enviar">
                 
         </fieldset>
     

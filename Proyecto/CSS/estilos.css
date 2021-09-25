@@ -30,10 +30,10 @@ div.contenedor-menu{
 
 .navegacion{
     width: 100%;
-    margin: 30px auto;
+    margin: 20px auto;
     font-family: 'Montserrat';
-    font-size: 15px;
-    /* background-color: #f8e2ea; */
+    font-size: 17px;
+    padding: 15px;
 }
 
 .navegacion ul{
@@ -41,8 +41,6 @@ div.contenedor-menu{
     margin: 0;
     padding: 0;
 }
-
-
 
 .menu > li{
     display: inline-block;
@@ -53,26 +51,24 @@ div.contenedor-menu{
 
 .menu > li > a{
     display: block;
-    padding: 15px 20px;
+    padding: 5px 30px;
     text-decoration: none;
     color: #fff ;
-    
 }
 
 .menu li a:hover{
-    color: #d1b3c4;
+    color: #735d78;
     transition: all 0.3s;
-    background-color: #f9f0f2;
+    background-color: #e8c2ca;
     border-radius: 10px;
-
 }
 
 .submenu{
     position: absolute;
     background-color: #d1b3c4;
-    border-radius: 10px;
+    border-radius: 5px;
     visibility: hidden;
-    opacity: 0;
+    opacity: 0.5;
     transition: opacity 1.5s;
     
 }
@@ -153,6 +149,8 @@ h2.titulofooter{
     font-family: 'Montserrat';
     font-size: 15px;
     color: white;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 div.iconos{
@@ -180,33 +178,55 @@ div.textofooter{
 
 /* Estilo para formulario de contacto */
 
-form.contacto{
-    background-color: rgba(255, 255, 255, 0.466);
-    border-radius: 6px;
-    color: #999;
-    padding: 100px auto;
-    margin: auto;
-    width: 600px;
-    font-size: 24px;
+.tituloFormulario{
+    padding: 30px;
+    text-align: center;
+    color: #735D78;
 }
-input, textarea{
+
+form.contacto{
+    display: flex;
+    font-family: "Monserrat";
+    color: #735d78;
+    width: 600px;
+    font-size: 20px;
     margin: auto;
-    outline: none;
-    
+    justify-content: left;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+legend.text{
+    text-align: center;
 }
 
 .campo{
+    display: block;
+    border-radius: 5px;
     padding: 5px;
-    border-radius: 6px;
-    border: 1px solid;
-    outline: none;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 20px;
+    font-size: 16px;
+    color: #555;
 }
+
+.grupo{
+    margin: 15px;
+    width: 100%;
+}
+
+textarea.campo{
+    height: 100px;
+}
+
 .campo:focus{
     border-color: #cdb4db;
 }
+
 .enviar{
     padding: 5px;
-    background-color: #f72585;
+    background-color: #b392ac;
     border: none;
     border-radius: 6px;
     font-size: 24px;
@@ -214,8 +234,14 @@ input, textarea{
     margin: 10px auto;
     display: inline-block;
     cursor: pointer;
-    width: 100%;
-    
+    width: 30%;
+}
+
+.enviar:hover{
+    color: #735d78;
+    transition: all 0.3s;
+    background-color: #e8c2ca;
+    border-radius: 10px;
 }
 
 /* Estilos main */
@@ -258,7 +284,7 @@ div.textWhatsapp h2{
     letter-spacing: 10px;
     color: #735d78;
     width: 50%;
-    margin-top: 100px;
+    margin-top: 120px;
     margin-right: 150px;
 }
 
@@ -471,14 +497,9 @@ body{
     text-align: center;
     
 }
+
 .label{
     margin: 55px;
-}
-.campo{
-    border-radius: 10px;
-    padding: 5px;
-    border: 1px solid;
-    margin: 5px 55px;
 }
 
 .botones{
