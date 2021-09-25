@@ -5,12 +5,8 @@
 }
 
 .galeria{
-    font-family: "open sans";
-}
-
-.linea{
-    border-top: 5px solid #f8e2ea;
-    margin-bottom: 100px;
+    background-color: #f9f0f2;
+    height: 100%;
 }
 
 .imagen img{
@@ -23,6 +19,7 @@
 .contenedor{
     display: flex;
     width: 70%;
+    padding-top: 50px;
     margin: auto;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -41,6 +38,7 @@
 .contenedorPaleta{
     display: flex;
     width: 70%;
+    padding-top: 50px;
     margin: auto;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -59,6 +57,7 @@
 .contenedorCorazon{
     display: flex;
     width: 70%;
+    padding-top: 50px;
     margin: auto;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -78,6 +77,7 @@
 .contenedorVariedad{
     display: flex;
     width: 70%;
+    padding-top: 50px;
     margin: auto;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -96,6 +96,7 @@
 .contenedorVertical{
     display: flex;
     width: 70%;
+    padding-top: 50px;
     margin: auto;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -110,7 +111,6 @@
     padding: 10px;
     box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, .75);
 }
-
 
 
 .imagenVertical img{
@@ -136,7 +136,24 @@
     border-radius: 30px;
 }
 
+.contenedorInicial{
+    display: flex;
+    width: 75%;
+    padding-top: 50px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 3px;
+}
 
+.contenedorInicial .imagen{
+    width: 32%;
+    position: relative; 
+    height: 450px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, .75);
+}
 
 .overlay{
     position: absolute;

@@ -5,39 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChocoSorpresa - Freya</title>
-    <link rel="stylesheet" href="/CSS/galeriaIMG.css">
-    <link rel="stylesheet" href="/CSS/estilos.css">
+    <link href="/CSS/estilos.css" rel="stylesheet">
+    <link href="/CSS/galeriaIMG.css" rel="stylesheet">
 </head>
 <header>
-    <h1>FREYA</h1>
-    <h2>Dulces Creaciones</h2>
-    <input type="checkbox" id="boton-menu">
-    <label for="boton-menu"><i class="bi bi-list"></i></label>
-    <nav class="navegacion">
-      <div>
-          <ul class="menu">
-            <li><a href="/index.html"  style="padding: 5px;">Inicio</a></li>
-              <li><a href="contacto.html"  style="padding: 5px;">Contactenos</a></li> |
-              <li><a href="galeria.html" style="padding: 5px;">Galeria</a>
-                  <ul class="submenu">
-                    <li><a style="padding: 15px;" href="/GaleriaHTML/chocoFresas.html">Choco Fresas</a></li>
-                    <li><a style="padding: 15px;" href="/GaleriaHTML/corazones.html">Corazones</a></li>
-                    <li><a style="padding: 15px;" href="/GaleriaHTML/licores.html">Licores</a></li>
-                    <li><a style="padding: 15px;" href="/GaleriaHTML/chocoSorpresa.html">Choco Piñata</a></li>
-                    <li><a style="padding: 15px;" href="/GaleriaHTML/tortaPaleta.html">Torta Paleta</a></li>
-                    <li><a style="padding: 15px;" href="/GaleriaHTML/variedad.html">Figuras Especiales</a></li>
-                    <li><a style="padding: 15px;" href="#">Cajas</a></li>
-                      </ul></li> |
-              <li><a href="tienda.html"  style="padding: 5px;">Tienda</a></li> |
-              <li><a href="registroClientes.html"  style="padding: 5px;">Registrese</a></li>  |
-          </ul>
+    <div class="contenedor-header">
+      <div class="contenedor-logo">
+        <img src="/Imagenes/Logo.png" height="180px" alt="Freya" style="float: left" /> 
       </div>
-  </nav>
-    <hr />
-</header>
+      <div class="contenedor-menu">
+        <input type="checkbox" id="boton-menu" />
+        <label for="boton-menu"><i class="bi bi-list"></i></label>
+        <nav class="navegacion">
+          <div>
+            <ul class="menu">
+              <li><a href="/index.html" style="padding: 5px">Inicio</a>
+              <li><a href="/galeria.html" style="padding: 5px">Galeria</a>
+                <ul class="submenu">
+                  <li><a style="padding: 15px" href="/GaleriaHTML/chocoFresas.html">Choco Fresas</a></li>
+                  <li><a style="padding: 15px" href="/GaleriaHTML/corazones.html" >Corazones</a></li>
+                  <li><a style="padding: 15px" href="/GaleriaHTML/licores.html" >Bebidas</a></li>
+                  <li><a style="padding: 15px" href="/GaleriaHTML/chocoSorpresa.html">Choco Piñata</a></li>
+                  <li><a style="padding: 15px" href="/GaleriaHTML/tortaPaleta.html">Torta Paleta</a></li>
+                  <li><a style="padding: 15px" href="/GaleriaHTML/variedad.html">Figuras Especiales</a></li>
+                  <li><a style="padding: 15px" href="#">Cajas</a></li>
+                </ul>
+              </li>
+              <li><a href="/tienda.html" style="padding: 5px">Tienda</a></li>
+              <li><a href="/registroClientes.html" style="padding: 5px">Registrate</a></li>
+              <li><a href="/contacto.html" style="padding: 5px">Contáctanos</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
 <body>
     <div class="galeria">
-        <div class="linea"></div>
         <div class="contenedor">
             <div class="imagen">
                 <img src="/Imagenes/chocoSorpresa/osoSorpresa_2.png" alt="">
@@ -95,6 +99,19 @@
             </div>
         </div>
     </div>
-
 </body>
+<footer>
+    <div class="contenedor-footer">
+      <div class="iconos">
+        <img class="IMG_footer" src="/Imagenes/instagram.svg">
+        <img class="IMG_footer" src="/Imagenes/facebook.svg">
+      </div>
+      <div class="textofooter">
+        <h2 class="titulofooter">Dirección: Transversal 2c #14c 38. Villas del Sutagao. Fusagasugá-Cundinamarca</h2>
+        <h2 class="titulofooter">Teléfono/Whatsapp: <i class="bi bi-whatsapp">3132371940</i></h2>
+        <h2 class="titulofooter">Horario de atención: Lunes a Sábado de 8:00 am a 6:00 pm</h2>
+      </div>
+
+    </div>
+  </footer>
 </html>
