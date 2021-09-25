@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0px;
 }
+
+
 /* Estilos para todos los encabezados */
 
 h1{
@@ -17,48 +19,18 @@ h2{
     text-align: center;
 }
 
-h2.titulofooter{
-    font-family: 'Montserrat';
-    font-size: 15px;
-    color: white;
-}
-
-#iconos{
-    float: left;
-}
-
-#textofooter{
-    float: right;
-}
-
-.footer{
-    background-color: #b5838d;
-    background-image: url("/Imagenes/fondo/footer.jpeg");
-    background-repeat: no-repeat;
-    margin-bottom: 15px;
-    text-align: center;
-    padding: 30px;
-    /*
-    text-align: center;
-    color: #8813cc;
-    background: #d3a8d8;
-    margin-bottom: 15px;
-    box-shadow: 1px 0 4px rgb(0, 0,0,.2);
-    padding: 30px;
-    */
-}
-
 div.contenedor-header{
     display: flex;
     background-image: url(/Imagenes/fondo/pincelada.png);
     background-color: #f9f0f2;
-   
-    /*background-color: #b5838d;*/
+    background-repeat: no-repeat;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
     height: 200px;
 }
+
+/* Estilo barra de navegación */
 
 div.contenedor-titulo{
     margin-top: 30px;
@@ -66,12 +38,8 @@ div.contenedor-titulo{
 }
 
 div.contenedor-menu{
-    margin-top: 50px;
-    
-       
-    
+    margin-top: 50px; 
 }
-
 
 .navegacion{
     width: 100%;
@@ -83,17 +51,12 @@ div.contenedor-menu{
     list-style: none;
     margin: 0;
     padding: 0;
-       
-
 }
 
 .menu > li{
     display: inline-block;
     margin-left: 50px;
     border-left: black 2px solid;
-    
-    
-
 }
 
 .menu > li > a{
@@ -116,6 +79,7 @@ div.contenedor-menu{
     transition: opacity 1.5s;
     
 }
+
 .submenu li a{
     display: block;
     padding: 15px;
@@ -123,6 +87,7 @@ div.contenedor-menu{
     text-decoration: none;
     
 }
+
 .menu li:hover .submenu{
     visibility: visible;
     opacity: 1;
@@ -172,6 +137,50 @@ header label:hover{
     
 }
 
+/* Estilo para el Footer */
+
+div.contenedor-footer{
+    display: flex;
+    background-image: url(/Imagenes/fondo/footer.png);
+    background-color: #f9f0f2;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 200px;
+}
+
+h2.titulofooter{
+    font-family: 'Montserrat';
+    font-size: 15px;
+    color: white;
+}
+
+div.iconos{
+    float: left;
+    margin: 100px 0 100px 0;
+}
+
+div.textofooter{
+    float: left;
+    margin:100px 0 100px 0;
+}
+
+.IMG_footer{
+    /*display: block;
+    margin: 50px auto;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #f7d1cd;
+    border-radius: 30px;*/         
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin: 15px;
+}
+
+/* Estilo para formulario de contacto */
+
 form.contacto{
     background-color: rgba(255, 255, 255, 0.466);
     border-radius: 6px;
@@ -210,13 +219,72 @@ input, textarea{
     
 }
 
-/* Estilos index */
+/* Estilos main */
 
 main{
     background-color: #f9f0f2;
+    height: 100%;
 }
 
+.freyaEs{
+    text-align: center;
+    margin: 5% 20%;
+}
 
+.freyaEs h2{
+    font-size: 40px;
+}
+
+.freyaEs p{
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.contendorVideo{
+    overflow: hidden;
+    width: 100%;
+}
+
+div.video{
+    float: left;
+    margin: 50px 0 50px 150px;
+    width: 30%;
+}
+
+div.textWhatsapp h2{
+    float: right;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 10px;
+    color: #735d78;
+    width: 50%;
+    margin-top: 100px;
+    margin-right: 150px;
+}
+
+.textWhatsapp h3{
+    float: right;
+    font-family: 'Ephesis', cursive;
+    font-size: 40px;
+    text-align: center;
+    color: #735d78;
+    letter-spacing: 10px;
+    width: 50%;
+    margin-top: 40px;
+    margin-right: 150px;
+}
+
+.textWhatsapp h4{
+    float: right;
+    font-family: 'Ephesis', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: #735d78;
+    letter-spacing: 10px;
+    width: 50%;
+    margin-right: 150px;
+}
 
 nav.index{
     background-color: #F7D1CD;
@@ -244,25 +312,13 @@ a:link{
     object-fit: cover;
 }
 
-.IMG_footer{
-    /*display: block;
-    margin: 50px auto;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #f7d1cd;
-    border-radius: 30px;*/         
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-}
-
 .slider{
     width: 810px;
     margin: auto;
     overflow: hidden;
 }
 
-.slider ul {
+.slider ul{
     display: flex;
     padding: 0;
     width: 400%;

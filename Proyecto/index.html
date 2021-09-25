@@ -10,21 +10,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@500&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
     <!-- -->
   </head>
   <body>
     <header>
-      
       <div class="contenedor-header">
         <div class="contenedor-logo">
           <img src="Imagenes/Logo.png" height="180px" alt="Freya" style="float: left" /> 
         </div>
-        <!--
-        <div class="contenedor-titulo">
-          <h1>FREYA</h1>
-          <h2>Dulces Creaciones</h2>
-        </div>
-        -->
         <div class="contenedor-menu">
           <input type="checkbox" id="boton-menu" />
           <label for="boton-menu"><i class="bi bi-list"></i></label>
@@ -34,7 +28,6 @@
                 <li>
                   <a href="contacto.html" style="padding: 5px">Contactenos</a>
                 </li>
-                
                 <li>
                   <a href="galeria.html" style="padding: 5px">Galeria</a>
                   <ul class="submenu">
@@ -98,49 +91,45 @@
     <main>
       <section class="slider">
         <ul>
-          <li>
-            <img class="IMG_index" src="Imagenes/osoSorpresa.jpeg" alt="" />
-          </li>
+          <li><img class="IMG_index" src="Imagenes/osoSorpresa.jpeg" alt="" /></li>
           <li><img class="IMG_index" src="Imagenes/15Fresas.jpeg" alt="" /></li>
-          <li>
-            <img
-              class="IMG_index"
-              src="Imagenes/8fresas_Cerveza.jpeg"
-              alt=""
-              style="width: 400px"
-            />
-          </li>
+          <li><img class="IMG_index" src="Imagenes/8fresas_Cerveza.jpeg" alt="" style="width: 400px"/></li>
           <li><img class="IMG_index" src="Imagenes/caja1.jpeg" alt="" /></li>
         </ul>
       </section>
-
-      <section>
-        <article>
-          <h2 style="text-align: left; margin: 50px">Quienes Somos</h2>
-          <p style="text-align: left; margin: 50px">
-            Freya es un emprendimiento que nace el 14 de febrero del 2021, con
-            la intención de llenar de alegría, felicidad y elegancia; los
-            lugares a los que llegan los productos elaborados por nosotros.
-          </p>
-        </article>
+      <section class="freyaEs">
+        <h2>Freya Dulces Creaciones</h2>
+        <p>Es un emprendimiento que nace el 14 de febrero del 2020, con el propósito de dar un toque de amor y dulzura en cada rincón del corazón.
+           Sus productos como la fresa, la torta y oreos son bañados por chocolate *** creando esa sensación de placer en el paladar
+      </section>
+      <section class="contendorVideo">
+        <div class="video">
+          <video width="500" height="500" autoplay controls loop muted>
+            <source src="/Video/fresaCerveza.mp4">
+            <source scr="/Video/fresaCerveza.ogv">
+          </video>
+        </div>
+        <div class="textWhatsapp">
+          <h2>Personaliza cada detalle seleccionando color, frase, motivo, productos, licor, globo, dulce, relleno</h2>
+          <h3>Haz tu pedido por WhatSapp 3132371940</h3>
+          <h4>Un asesor te guiará</h4>
+        </div>
       </section>
     </main>
-    <hr />
-    <footer class="footer">
-      <section>
-        <article id="textofooter">
-          <h2 class="titulofooter">Dirección: Transversal 2c #14c 38. Villas del Sutagao. Fusagasugá-Cundinamarca</h2>
-          <h2 class="titulofooter">Teléfono/Whatsapp: <i class="bi bi-whatsapp">30000000</i></h2>
-          <h2 class="titulofooter">Horario de atención: Lunes a Sábado de 8:00 am a 6:00 pm</h2>
-        </article>
-      </section>
-      <br>
-      <section>
-        <article id="iconos">
+  
+    <footer>
+      <div class="contenedor-footer">
+        <div class="iconos">
           <img class="IMG_footer" src="Imagenes/instagram.svg">
           <img class="IMG_footer" src="Imagenes/facebook.svg">
-        </article>
-      </section>
+        </div>
+        <div class="textofooter">
+          <h2 class="titulofooter">Dirección: Transversal 2c #14c 38. Villas del Sutagao. Fusagasugá-Cundinamarca</h2>
+          <h2 class="titulofooter">Teléfono/Whatsapp: <i class="bi bi-whatsapp">3132371940</i></h2>
+          <h2 class="titulofooter">Horario de atención: Lunes a Sábado de 8:00 am a 6:00 pm</h2>
+        </div>
+
+      </div>
     </footer>
   </body>
 </html>
