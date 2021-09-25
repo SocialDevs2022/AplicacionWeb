@@ -31,6 +31,8 @@ div.contenedor-menu{
 .navegacion{
     width: 100%;
     margin: 30px auto;
+    font-family: 'Montserrat';
+    font-size: 15px;
     /* background-color: #f8e2ea; */
 }
 
@@ -61,14 +63,14 @@ div.contenedor-menu{
     color: #d1b3c4;
     transition: all 0.3s;
     background-color: #f9f0f2;
-    border-radius: 5px;
+    border-radius: 10px;
 
 }
 
 .submenu{
     position: absolute;
     background-color: #d1b3c4;
-    border-radius: 15px;
+    border-radius: 10px;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1.5s;
