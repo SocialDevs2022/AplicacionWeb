@@ -3,7 +3,6 @@
     padding: 0px;
 }
 
-
 /* Estilos para todos los encabezados */
 
 div.contenedor-header{
@@ -205,15 +204,16 @@ legend.text{
     border-radius: 5px;
     padding: 5px;
     border: 1px solid #ccc;
-    width: 100%;
+    width: 92%;
     height: 20px;
     font-size: 16px;
-    color: #555;
+    color: rgb(85, 85, 85);
 }
 
 .grupo{
     margin: 15px;
     width: 100%;
+    color: rgba(85, 85, 85);
 }
 
 textarea.campo{
@@ -224,7 +224,7 @@ textarea.campo{
     border-color: #cdb4db;
 }
 
-.enviar{
+.boton{
     padding: 5px;
     background-color: #b392ac;
     border: none;
@@ -237,7 +237,7 @@ textarea.campo{
     width: 30%;
 }
 
-.enviar:hover{
+.boton:hover{
     color: #735d78;
     transition: all 0.3s;
     background-color: #e8c2ca;
@@ -396,7 +396,18 @@ nav.galeria{
 
 
 /* Estilos clientes */
+.selectDto{
+    display: block;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 94%;
+    height: 30px;
+    font-size: 16px;
+    color: rgba(85, 85, 85, 0.452);
 
+}
+/*
 nav{   
     background-color:ffb4a2;
 
@@ -469,50 +480,20 @@ body{
 
 .menu-clientes ul li a:hover{
     color: #f0b6ed;
-}
-
-.fondo{
-    width: 98%;
-    border-radius: 15px;
-    box-shadow: 1px 0 4px rgb(0, 0,0,.2);
-    padding: 15px;
-    margin: 0px auto;
-    
-}
-.section{    
-    float: center;
-    width: 68%;
-    border-radius: 15px;
-    box-shadow: 1px 0 4px rgb(0, 0,0,.2);
-    margin-bottom: 15px;
-    padding: 15px;
-    margin: 0px auto;
-    background-color: #C7FFD8;
-}
-
-.form{
-    background-color: #CFFFFE;
-}
-.legend{
-    text-align: center;
-    
-}
-
-.label{
-    margin: 55px;
-}
-
-.botones{
-    margin: 5px 80px;
-    font-size:  20px;
-    background-color: #f0dbef;
-    color: cornflowerblue;
-    padding: 5px 8px;
-}
-
-.botones:hover{
-    color: rgb(0, 60, 255);
-    background-color: #f1bbbb;
-}
+}*/
 
 
+fieldset{
+    width: 100%;
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-image: initial;
+}
