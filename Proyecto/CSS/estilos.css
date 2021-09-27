@@ -225,16 +225,18 @@ textarea.campo{
 }
 
 .boton{
-    padding: 5px;
+    padding: 2px;
     background-color: #b392ac;
     border: none;
     border-radius: 6px;
-    font-size: 24px;
+    font-size: 20px;
     color: #fff;
     margin: 10px auto;
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     cursor: pointer;
-    width: 30%;
+    width: 25%;
 }
 
 .boton:hover{
@@ -481,7 +483,6 @@ body{
 .menu-clientes ul li a:hover{
     color: #f0b6ed;
 }*/
-
 
 fieldset{
     width: 100%;
