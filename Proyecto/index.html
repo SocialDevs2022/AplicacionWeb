@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Freya - Dulces Creaciones</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link href="CSS/estilos.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/slider.css">
     <!-- Las siguientes 3 líneas corresponden a la asignación de estilo de letra desde Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,14 +48,26 @@
     </header>
 
     <main>
-      <section class="slider">
-        <ul>
-          <li><img class="IMG_index" src="Imagenes/osoSorpresa.jpeg" alt="" /></li>
-          <li><img class="IMG_index" src="Imagenes/15Fresas.jpeg" alt="" /></li>
-          <li><img class="IMG_index" src="Imagenes/8fresas_Cerveza.jpeg" alt="" style="width: 400px"/></li>
-          <li><img class="IMG_index" src="Imagenes/caja1.jpeg" alt="" /></li>
-        </ul>
-      </section>
+      <br><br><br>
+      <div class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider__section">
+                <img src="Imagenes/osoSorpresa.jpeg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="Imagenes/15Fresas.jpeg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="Imagenes/8fresas_Cerveza.jpeg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="Imagenes/caja1.jpeg" alt="" class="slider__img">
+            </div>
+        </div>
+        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+      </div>
+      <script src="javaScript/slider.js"></script>
       <section class="freyaEs">
         <h2>Freya Dulces Creaciones</h2>
         <p>Es un emprendimiento que nace el 14 de febrero del 2020, con el propósito de dar un toque de amor y dulzura en cada rincón del corazón.
