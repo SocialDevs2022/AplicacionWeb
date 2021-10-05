@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Freya - Dulces Creaciones</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="CSS/estilos.css">
-    <link rel="stylesheet" href="CSS/slider.css">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/slider.css">
     <!-- Las siguientes 3 líneas corresponden a la asignación de estilo de letra desde Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,84 +15,111 @@
     <!-- -->
   </head>
   <body>
+    <div class="containerPage">
     <header>
       <div class="contenedor-header">
         <div class="contenedor-logo">
-          <img src="Imagenes/Logo.png" height="180px" alt="Freya" style="float: left" /> 
+          <img src="../Imagenes/Logo.png" height="180px" alt="Freya" style="float: left" /> 
         </div>
         <div class="contenedor-menu">
           <input type="checkbox" id="boton-menu" />
-          <label for="boton-menu"><i class="bi bi-list"></i></label>
+          <div class="contenedor_icon-menu">
+            <label for="boton-menu"><i class="icon-menu bi bi-list"></i>
+          </div>
           <nav class="navegacion">
-            <div>
               <ul class="menu">
-                <li><a href="galeria.html">Galeria</a>
+                <li><a href="../galeria.html">Galeria</a>
                   <ul class="submenu">
-                    <li><a style="padding: 15px" href="GaleriaHTML/chocoFresas.html">Choco Fresas</a></li>
-                    <li><a style="padding: 15px" href="GaleriaHTML/corazones.html" >Corazones</a></li>
-                    <li><a style="padding: 15px" href="GaleriaHTML/licores.html" >Bebidas</a></li>
-                    <li><a style="padding: 15px" href="GaleriaHTML/chocoSorpresa.html">Choco Piñata</a></li>
-                    <li><a style="padding: 15px" href="GaleriaHTML/tortaPaleta.html">Torta Paleta</a></li>
-                    <li><a style="padding: 15px" href="GaleriaHTML/variedad.html">Figuras Especiales</a></li>
-                    <li><a style="padding: 15px" href="#">Cajas</a></li>
+                    <li><a style="padding: 15px" href="../GaleriaHTML/chocoFresas.html">Choco Fresas</a></li>
+                    <li><a style="padding: 15px" href="../GaleriaHTML/corazones.html" >Corazones</a></li>
+                    <li><a style="padding: 15px" href="../GaleriaHTML/licores.html" >Bebidas</a></li>
+                    <li><a style="padding: 15px" href="../GaleriaHTML/chocoSorpresa.html">Choco Piñata</a></li>
+                    <li><a style="padding: 15px" href="../GaleriaHTML/tortaPaleta.html">Torta Paleta</a></li>
+                    <li><a style="padding: 15px" href="../GaleriaHTML/variedad.html">Figuras Especiales</a></li>
                   </ul>
                 </li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="registroClientes.html">Registrate</a></li>
-                <li><a href="contacto.html">Contáctanos</a></li>
+                <li><a href="../tienda.html">Tienda</a></li>
+                <li><a href="../registroClientes.html">Registrate</a></li>
+                <li><a href="../contacto.html">Contáctanos</a></li>
               </ul>
-            </div>
           </nav>
         </div>
       </div>
     </header>
 
     <main>
-      <br><br><br>
-      <div class="container-slider">
-        <div class="slider" id="slider">
-            <div class="slider__section">
-                <img src="Imagenes/osoSorpresa.jpeg" alt="" class="slider__img">
-            </div>
-            <div class="slider__section">
-                <img src="Imagenes/15Fresas.jpeg" alt="" class="slider__img">
-            </div>
-            <div class="slider__section">
-                <img src="Imagenes/8fresas_Cerveza.jpeg" alt="" class="slider__img">
-            </div>
-            <div class="slider__section">
-                <img src="Imagenes/caja1.jpeg" alt="" class="slider__img">
-            </div>
+      <div class="container-main">
+        <div class="container-slider">
+          <div class="slider" id="slider">
+              <div class="slider__section">
+                  <img src="../Imagenes/Slider/osoSorpresa.jpeg" alt="" class="slider__img">
+                  <div class="slider__content">
+                    <h2 class="slider__title">Choco Piñata</h2>
+                    <p class="slider__text">Sorprender con tu regalo</p>
+                    <a href="../" class="slider__link">Comprar</a>
+                  </div>
+              </div>
+              <div class="slider__section">
+                  <img src="../Imagenes/Slider/15Fresas.jpeg" alt="" class="slider__img">
+                  <div class="slider__content">
+                    <h2 class="slider__title">Choco Fresas</h2>
+                    <p class="slider__text">Detalles con Amor</p>
+                    <a href="../" class="slider__link">Comprar</a>
+                  </div>
+              </div>
+              <div class="slider__section">
+                  <img src="../Imagenes/Slider/figuraBigote.jpeg" alt="" class="slider__img">
+                  <div class="slider__content">
+                    <h2 class="slider__title">Figuras Especiales</h2>
+                    <p class="slider__text">Para ellos</p>
+                    <a href="../" class="slider__link">Comprar</a>
+                  </div>
+              </div>
+              <div class="slider__section">
+                  <img src="../Imagenes/Slider/caja1.jpeg" alt="" class="slider__img">
+                  <div class="slider__content">
+                    <h2 class="slider__title">Bebidas</h2>
+                    <p class="slider__text">Deleita tu paladar</p>
+                    <a href="../" class="slider__link">Comprar</a>
+                  </div>
+              </div>
+          </div>
+          <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+          <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
         </div>
-        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
-        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+        <script src="../javaScript/slider.js"></script>
+        <section class="freyaEs">
+          <h2>Freya Dulces Creaciones</h2>
+          <p>Es un emprendimiento que nace el 14 de febrero del 2020, con el propósito de dar un toque de amor y dulzura en cada rincón del corazón.
+            Sus productos como la fresa, la torta y oreos son bañados por chocolate, creando esa sensación de placer en el paladar
+        </section>
+        <section class="contendorVideo">
+          <div class="video">
+            <video autoplay controls loop muted>
+              <source src="../Video/fresaCerveza.mp4">
+              <source scr="Video/fresaCerveza.ogv">
+            </video>
+          </div>
+          <div class="textVideo">
+            <h2>Personaliza cada detalle seleccionando: </h2>
+            <h2> color, frase, motivo, producto, licor, globo, dulce, relleno</h2>
+          </div>
+        </section>
+        <section>
+          <div class="textWhatsapp">
+            <h3>Haz tu pedido por </h3>
+            <h3>WhatSapp 3132371940</h3>
+            <h4>Un asesor te guiará</h4>
+          </div>
+        </section>
       </div>
-      <script src="javaScript/slider.js"></script>
-      <section class="freyaEs">
-        <h2>Freya Dulces Creaciones</h2>
-        <p>Es un emprendimiento que nace el 14 de febrero del 2020, con el propósito de dar un toque de amor y dulzura en cada rincón del corazón.
-           Sus productos como la fresa, la torta y oreos son bañados por chocolate *** creando esa sensación de placer en el paladar
-      </section>
-      <section class="contendorVideo">
-        <div class="video">
-          <video width="500" height="500" autoplay controls loop muted>
-            <source src="Video/fresaCerveza.mp4">
-            <source scr="Video/fresaCerveza.ogv">
-          </video>
-        </div>
-        <div class="textWhatsapp">
-          <h2>Personaliza cada detalle seleccionando color, frase, motivo, producto, licor, globo, dulce, relleno</h2>
-          <h3>Haz tu pedido por WhatSapp 3132371940</h3>
-          <h4>Un asesor te guiará</h4>
-        </div>
-      </section>
     </main>
   
     <footer>
       <div class="contenedor-footer">
         <div class="iconos">
-          <img class="IMG_footer" src="Imagenes/instagram.svg">
-          <img class="IMG_footer" src="Imagenes/facebook.svg">
+          <img class="IMG_footer" src="../Imagenes/instagram.svg">
+          <img class="IMG_footer" src="../Imagenes/facebook.svg">
         </div>
         <div class="textofooter">
           <h2 class="titulofooter">Dirección: Transversal 2c #14c 38. Villas del Sutagao. Fusagasugá-Cundinamarca</h2>
@@ -102,5 +129,6 @@
 
       </div>
     </footer>
+  </div>
   </body>
 </html>
