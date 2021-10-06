@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+    
     <title>Freya - Dulces Creaciones</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../CSS/estilos.css">
@@ -15,35 +16,34 @@
     <!-- -->
   </head>
   <body>
-    <div class="containerPage">
+    <div id="container_ppal">
+    <div id="containerPage">
     <header>
       <div class="contenedor-header">
         <div class="contenedor-logo">
-          <img src="../Imagenes/Logo.png" height="180px" alt="Freya" style="float: left" /> 
+          <img class="img-logo" src="../Imagenes/Logo.png" alt="Freya"/> 
         </div>
         <div class="contenedor-menu">
-          <input type="checkbox" id="boton-menu" />
-          <div class="contenedor_icon-menu">
-            <label for="boton-menu"><i class="icon-menu bi bi-list"></i>
-          </div>
-          <nav class="navegacion">
-              <ul class="menu">
-                <li><a href="../galeria.html">Galeria</a>
-                  <ul class="submenu">
-                    <li><a style="padding: 15px" href="../GaleriaHTML/chocoFresas.html">Choco Fresas</a></li>
-                    <li><a style="padding: 15px" href="../GaleriaHTML/corazones.html" >Corazones</a></li>
-                    <li><a style="padding: 15px" href="../GaleriaHTML/licores.html" >Bebidas</a></li>
-                    <li><a style="padding: 15px" href="../GaleriaHTML/chocoSorpresa.html">Choco Piñata</a></li>
-                    <li><a style="padding: 15px" href="../GaleriaHTML/tortaPaleta.html">Torta Paleta</a></li>
-                    <li><a style="padding: 15px" href="../GaleriaHTML/variedad.html">Figuras Especiales</a></li>
-                  </ul>
-                </li>
-                <li><a href="../tienda.html">Tienda</a></li>
-                <li><a href="../registroClientes.html">Registrate</a></li>
-                <li><a href="../contacto.html">Contáctanos</a></li>
-              </ul>
-          </nav>
+          <span class="icon-menu" id="btn-menu"><i class="bi bi-list"></i></span>
+          <nav class="navegacion" id="navegacion">
+            <ul class="menu">
+              <li><a href="../galeria.html">Galeria</a>
+                <ul class="submenu">
+                  <li><a href="../GaleriaHTML/chocoFresas.html">Choco Fresas</a></li>
+                  <li><a href="../GaleriaHTML/corazones.html" >Corazones</a></li>
+                  <li><a href="../GaleriaHTML/licores.html" >Bebidas</a></li>
+                  <li><a href="../GaleriaHTML/chocoSorpresa.html">Choco Piñata</a></li>
+                  <li><a href="../GaleriaHTML/tortaPaleta.html">Torta Paleta</a></li>
+                  <li><a href="../GaleriaHTML/variedad.html">Figuras Especiales</a></li>
+                </ul>
+              </li>
+              <li><a href="../tienda.html">Tienda</a></li>
+              <li><a href="../registroClientes.html">Registrate</a></li>
+              <li><a href="../contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
         </div>
+        
       </div>
     </header>
 
@@ -87,15 +87,15 @@
           <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
           <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
         </div>
-        <script src="../javaScript/slider.js"></script>
+        
         <section class="freyaEs">
           <h2>Freya Dulces Creaciones</h2>
           <p>Es un emprendimiento que nace el 14 de febrero del 2020, con el propósito de dar un toque de amor y dulzura en cada rincón del corazón.
             Sus productos como la fresa, la torta y oreos son bañados por chocolate, creando esa sensación de placer en el paladar
         </section>
-        <section class="contendorVideo">
-          <div class="video">
-            <video autoplay controls loop muted>
+        <section class="section_video">
+          <div class="container_video">
+              <video class="video" autoplay controls loop muted>
               <source src="../Video/fresaCerveza.mp4">
               <source scr="Video/fresaCerveza.ogv">
             </video>
@@ -130,5 +130,8 @@
       </div>
     </footer>
   </div>
+  <script src="../javaScript/slider.js"></script>
+  <script src="../javaScript/menu.js"></script>
+</div>
   </body>
 </html>

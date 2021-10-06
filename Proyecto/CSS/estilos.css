@@ -1,15 +1,23 @@
-/* Diseño inicial para un width: 1800px */
+/* Diseño inicial */
 *{
     margin: 0;
     padding: 0px;
-    
 }
 html, body{
     height: 100%;
 }
+#container_ppal, #containerPage{
+    height: 100%;
+}
+#container_ppal{
+    width: 100%;
+}
+#containerPage{
+    width: 1280px;
+    margin: 0 auto;
+}
 
-
-/* Estilos para todos los encabezados */
+/* Estilo encabezado */
 
 .contenedor-header{
     display: flex;
@@ -21,169 +29,132 @@ html, body{
     width: 100%;
     height: 200px;
 }
-
-/* Estilo barra de navegación */
-
-div.contenedor-titulo{
-    margin-top: 30px;
-    color: #fff;
+.contenedor-logo{
+    width: 20%;
+    height: 180px;
+    margin-top: 1%;
+    margin-left: 3%;
 }
+.img-logo{
+    width: 130%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    padding-right: 8%;
+}
+
+/* Estilo Menu */
 
 .contenedor-menu{
-    margin-top: 50px;
-    position: relative; 
+    width: 70%;
+    display: inline-block;
+    justify-self: right;
 }
-
 .navegacion{
     display: block;
     width: 100%;
-    margin-top: 10px;
     text-align: center;
     font-family: 'Montserrat';
     font-size: 17px;
-    padding: 15px;
-
-    
 }
-
 .navegacion ul{
     list-style: none;
-    margin: 0;
+}
+.menu{
+    position: absolute;
+    top: 10%;
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
-
-.menu > li{
+.menu li{
     display: inline-block;
-    margin-left: 50px;
-    border-bottom: rgb(0, 0, 0) 2px solid;
-    
+    padding: 0 1.2em;
 }
-
 .menu > li > a{
-    display: block;
-    padding: 5px 30px;
+    padding: 8px 15px;
     text-decoration: none;
     color: #fff ;
+    border-bottom: 1px solid black;
 }
-
 .menu li a:hover{
-    color: #735d78;
-    transition: all 0.3s;
-    background-color: #e8c2ca;
-    border-radius: 10px;
+    color: black;
+    transition: all 0.5s;
+    
+    background-color: #f9f0f2ad;
+    border-radius: 5px;
 }
-
 .submenu{
-    position: absolute;
+    margin-top: 2%;
+    position:absolute;
     background-color: #d1b3c4;
     border-radius: 5px;
     visibility: hidden;
-    opacity: 0.5;
-    transition: opacity 1.5s;
+    opacity: 0.3;
+    transition: all 0.5s;
     list-style: none;
+    width: 28%;
+    font-size: 15px;
 }
-
-.submenu li a{
+.submenu li{
     display: block;
-    padding: 15px;
+    padding: 10px 0;
+    margin-left: 0;
+}
+.submenu li a{
+    padding: 10px 10px;
     color: #fff;
     text-decoration: none;
-    
 }
-
 .menu li:hover .submenu{
     visibility: visible;
     opacity: 1;
     cursor: pointer;
-    display: block;
     z-index: 9999;
 }
-
-#boton-menu{
+.icon-menu{
     display: none;
-}
-
-header label{
-    display: none;
-
-}
-
-/* Estilo para el Footer */
-
-div.contenedor-footer{
-    display: flex;
-    background-image: url(/Imagenes/fondo/footer.png);
-    background-color: #f9f0f2;
-    background-repeat: no-repeat;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-    height: 200px;
-}
-
-.titulofooter{
-    font-family: 'Montserrat';
-    font-size: 15px;
-    color: white;
-    letter-spacing: 2px;
-    text-align: center;
-}
-
-.iconos{
-    float: left;
-    margin: 100px 0 100px 0;
-}
-
-.textofooter{
-    float: left;
-    margin:100px 0 100px 0;
-}
-
-.IMG_footer{
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    margin: 15px;
 }
 
 /* Estilos main */
 
 main{
     background-color: #f9f0f2;
-    height: 100%;
 }
 .container-main{
     width: 80%;
     margin: auto;
     padding: 50px 0;
 }
+
+/* Estilos main index */
+
 .freyaEs{
     text-align: center;
     margin: 5% 20%;
 }
-
 .freyaEs h2{
     font-size: 40px;
 }
-
 .freyaEs p{
     font-size: 20px;
     margin-top: 15px;
 }
-
-.contendorVideo{
+.section_video{
     display: flex;
     width: 100%;
     margin: auto;
+    padding-bottom: 3%;
+    border-bottom: 1px solid #555;
 }
-
+.container_video{
+    width: 150%;
+    height: 100%;
+}
 .video{
-    margin: 0 20px;
     width: 100%;
-    max-width: 600px;
-
+    max-width: 150%;
 }
-
 .textVideo {
     font-family: 'Architects Daughter', cursive;
     font-size: 20px;
@@ -191,8 +162,8 @@ main{
     letter-spacing: 10px;
     color: #735d78;
     margin: auto;
+    padding-left: 15%;
 }
-
 .textWhatsapp {
     display: block;
     font-family: 'Ephesis', cursive;
@@ -203,30 +174,26 @@ main{
     width: 70%;
     margin: 50px auto 0;
 }
-
 .textWhatsapp h4{
     font-size: 30px;
 }
-
 nav.index{
     background-color: #F7D1CD;
     width: 100%;
     height: 20px;
 }
-
 a:link{   
     text-align: center;
     text-decoration: none;
 }
 
-/* Estilo para formulario de contacto */
+/* Estilo main contactenos (formulario) */
 
 .tituloFormulario{
     padding: 30px;
     text-align: center;
     color: #735D78;
 }
-
 form.contacto{
     display: flex;
     font-family: "Monserrat";
@@ -238,11 +205,9 @@ form.contacto{
     flex-wrap: wrap;
     overflow: hidden;
 }
-
 legend.text{
     text-align: center;
 }
-
 .campo{
     display: block;
     border-radius: 5px;
@@ -253,21 +218,17 @@ legend.text{
     font-size: 16px;
     color: rgb(85, 85, 85);
 }
-
 .grupo{
     margin: 15px;
     width: 100%;
     color: rgba(85, 85, 85);
 }
-
 textarea.campo{
     height: 100px;
 }
-
 .campo:focus{
     border-color: #cdb4db;
 }
-
 .boton{
     padding: 2px;
     background-color: #b392ac;
@@ -282,7 +243,6 @@ textarea.campo{
     cursor: pointer;
     width: 25%;
 }
-
 .boton:hover{
     color: #735d78;
     transition: all 0.3s;
@@ -290,32 +250,8 @@ textarea.campo{
     border-radius: 10px;
 }
 
-/* Estilos Galeria */
+/* Estilos main de Registro de clientes (formulario) */
 
-h1.titulogaleria{
-    color: white;
-    font-size: 60px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 20px;
-    text-align: center;
-}
-
-h2.titulogaleria{
-    color: white;
-    text-align: center;
-}
-
-nav.galeria{   
-    background-color:black;
-
-}
-
-/* Estilos tienda aplicar h1, nav y h2 en html tienda*/
-
-
-
-
-/* Estilos clientes */
 .selectDto{
     display: block;
     border-radius: 5px;
@@ -325,9 +261,7 @@ nav.galeria{
     height: 30px;
     font-size: 16px;
     color: rgba(85, 85, 85, 0.452);
-
 }
-
 fieldset{
     width: 100%;
     display: block;
@@ -343,66 +277,102 @@ fieldset{
     border-image: initial;
 }
 
+/* Estilo para el Footer */
+
+.contenedor-footer{
+    display: flex;
+    background-image: url(/Imagenes/fondo/footer.png);
+    background-color: #f9f0f2;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 200px;
+    flex-direction: column;
+}
+.titulofooter{
+    font-family: 'Montserrat';
+    font-size: 15px;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.iconos{
+    float: left;
+    margin: 100px 0 100px 0;
+}
+.textofooter{
+    float: left;
+    margin:100px 0 100px 0;
+}
+.IMG_footer{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin: 15px;
+}
+
 /* Responsive */
 @media (max-width: 768px){
     html{
         overflow-x: hidden;
     }
+    #containerPage{
+        width: 100%;
+        height: 100%;
+    }
     .contenedor-header{
         flex-direction: column;
-        justify-content: flex-start;
     }
     .contenedor-logo{
-        margin-left: 50px;
+        padding-left: 8%;
     }
-
-    .contenedor_icon-menu{
+    .contenedor-menu{
+        width: 60%;
+    }
+    .icon-menu{
+        width: 7%;
+        font-size: 2em;
+        border: 1px solid #454546;
         display: block;
-        margin-top: 5%;
-        margin-left: 50%;
+        padding: 5px;
+        cursor: pointer;
+        margin-top: 10%;
+        margin-left: 80%;
+        z-index: 9999999;
     }
-    .icon-menu {
-        font-size: 40px;
-        border: 1px solid #555;
-    }
-
     .icon-menu:hover{
         color: #e8c2ca;
     }
-
-    header label{
-        display: block;
-        width: 42px;
-    }
-    header label:hover{
-        cursor: pointer;
-        background: rgba(0, 0, 0, 0.3);
-    }
-    .menu li{
-        margin-left: 10px;
-        margin-top: 10px;
-    }
-
-    .menu li a{
-        color: #735d78;
-    }
     .navegacion{
-        margin-top: 30px;
-        margin-left: 60%;
+        opacity: 0;
         visibility: hidden;
+        transition: all 0.5s;
+        z-index: 999;
     }
-
-    
-    #boton-menu:checked ~ .navegacion{
-        visibility: visible;
-        margin-left: -43%;
-        margin-top: 40px;
+    .menu{
+        display: block;
+        position: absolute;
+        top: 200px;
+        left: 0;
         width: 100%;
-        font-size: 15px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
-
-    .contendorVideo{
+    .menu li a{
+        color: #735d78; 
+    }
+    .mostrar{
+        opacity: 5;
+        visibility: visible;
+    }
+    .section_video{
         flex-direction: column;
+    }
+    .container_video{
+        width: 60%;
+        margin: auto;
     }
     .video{
         margin: auto;
@@ -411,13 +381,11 @@ fieldset{
         margin: 40px auto;
         font-size: 18px;
         font-weight: bold;
-        border-bottom: 1px solid #555;
         padding-bottom: 30px;
     }
     .textWhatsapp{
         font-size: 30px;
         margin: auto;
-        border-top: 1px solid #555;
         padding-top: 30px;
     }
     .contenedor-footer{
@@ -430,67 +398,44 @@ fieldset{
     .textofooter{
         padding-top: 30px;
     }
-
     .textofooter h2{
-        font-size: 10px;
+        font-size: 8px;
         padding-top: 10px;
     }
-
 }
-
 
 @media (max-width: 1024px) {
     html{
         overflow-x: hidden;
     }
-    .contenedor-header{
-        flex-direction: column;
-    }
-    .menu li{
-        margin-left: 5px;
-        margin-top: 0;
-    }
-
-    .navegacion{
-        font-size: 12px;
-        margin-top: -10px;
-        margin-left: -20%;
-
-    }
-    .contendorVideo{
-        justify-content: space-around;
-        height: 30%;
-    }
-    .Video{
-        max-width: 400px;
-    }
-    .textVideo{
-        font-size: 15px;
-    }
-    .textWhatsapp{
-        font-size: 30px;
-    }
-}
-
-@media (min-width: 1280px){
-
-    .menu li{
-        margin-left: 20px;
-        margin-bottom: 35px;
-    }
-    .navegacion{
-        font-size: 18px;   
-    }
-    .contendorVideo{
-        padding-bottom: 50px;
-        border-bottom: 1px solid #555;
-    }
-    .textVideo{
-        font-size: 20px;
-    }
-    .textWhatsapp{
+    #containerPage{
         width: 100%;
-        margin: 50px auto;
-        font-size: 40px;
+        height: 100%;
+    }
+    .contenedor-menu{
+        width: 65%;
+    }
+    .contenedor-logo{
+        width: 20%;
+        margin-left: 1%;
+    }
+    .menu li{
+        padding: 0 8px;
+    }
+    .submenu{
+        width: 30%;
+    }
+    .submenu li{
+        padding: 10px 0;
+    }
+    .submenu li a{
+        padding: 10px 3px;
+    }
+    .textVideo{
+        font-size: 80%;
+        padding-left: 5px;
+    }
+    .textWhatsapp h3{
+        font-size: 80%;
     }
 }
