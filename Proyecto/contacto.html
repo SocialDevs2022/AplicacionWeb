@@ -15,28 +15,26 @@
 </head>
 
 <body>
-  <div class="containerPage">
-    <header>
-      <div class="contenedor-header">
-        <div class="contenedor-logo">
-          <img src="../Imagenes/Logo.png" height="180px" alt="Freya" style="float: left" /> 
-        </div>
-        <div class="contenedor-menu">
-          <input type="checkbox" id="boton-menu" />
-          <div class="contenedor_icon-menu">
-            <label for="boton-menu"><i class="icon-menu bi bi-list"></i>
+  <div id="container_ppal">
+    <div id="containerPage">
+      <header>
+        <div class="contenedor-header">
+          <div class="contenedor-logo">
+            <img class="img-logo" src="../Imagenes/Logo.png" alt="Freya"/> 
           </div>
-          <nav class="navegacion">
+          <div class="contenedor-menu">
+            <span class="icon-menu" id="btn-menu"><i class="bi bi-list"></i></span>
+            <nav class="navegacion" id="navegacion">
               <ul class="menu">
                 <li><a href="../index.html">Inicio</a>
                 <li><a href="../galeria.html">Galeria</a>
                   <ul class="submenu">
-                    <li><a style="padding: 15px" href="../GaleriaHTML/chocoFresas.html">Choco Fresas</a></li>
-                    <li><a style="padding: 15px" href="../GaleriaHTML/corazones.html" >Corazones</a></li>
-                    <li><a style="padding: 15px" href="../GaleriaHTML/licores.html" >Bebidas</a></li>
-                    <li><a style="padding: 15px" href="../GaleriaHTML/chocoSorpresa.html">Choco Piñata</a></li>
-                    <li><a style="padding: 15px" href="../GaleriaHTML/tortaPaleta.html">Torta Paleta</a></li>
-                    <li><a style="padding: 15px" href="../GaleriaHTML/variedad.html">Figuras Especiales</a></li>
+                    <li><a href="../GaleriaHTML/chocoFresas.html">Choco Fresas</a></li>
+                    <li><a href="../GaleriaHTML/corazones.html" >Corazones</a></li>
+                    <li><a href="../GaleriaHTML/licores.html" >Bebidas</a></li>
+                    <li><a href="../GaleriaHTML/chocoSorpresa.html">Choco Piñata</a></li>
+                    <li><a href="../GaleriaHTML/tortaPaleta.html">Torta Paleta</a></li>
+                    <li><a href="../GaleriaHTML/variedad.html">Figuras Especiales</a></li>
                   </ul>
                 </li>
                 <li><a href="../tienda.html">Tienda</a></li>
@@ -44,53 +42,55 @@
                 <li><a href="../contacto.html">Contáctanos</a></li>
               </ul>
           </nav>
+          </div>
+          
         </div>
-      </div>
-    </header>
-  <main>
-    <div class="container-main">
-    <section class="tituloFormulario">
-      <h2>Contáctanos</h2>
-    </section>
-    
-    <form class="contacto">
-      <fieldset>
-        <div class="grupo">
-          <label for="nombre">Nombre completo</label>
-          <input type="text" id="nombre" name="nombre" class="campo">
-        </div>
-        <div class="grupo">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" class="campo">
-        </div>
-        <div class="grupo">
-          <label for="telefono">Telefono/Celular</label><br>
-          <input type="number" id="telefono" name="telefono" class="campo">
-        </div>
-        <div class="grupo">
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="15" cols="70" class="campo"></textarea><br><br>
-        </div>
-        <input type="submit" id="Enviar" name="enviar" class="boton">
-      </fieldset>
-    </form>
-  </div>
-  </main>  
-    <footer>
-      <div class="contenedor-footer">
-        <div class="iconos">
-          <img class="IMG_footer" src="Imagenes/instagram.svg">
-          <img class="IMG_footer" src="Imagenes/facebook.svg">
-        </div>
-        <div class="textofooter">
-          <h2 class="titulofooter">Dirección: Transversal 2c #14c 38. Villas del Sutagao. Fusagasugá-Cundinamarca</h2>
-          <h2 class="titulofooter">Teléfono/Whatsapp: <i class="bi bi-whatsapp">3132371940</i></h2>
-          <h2 class="titulofooter">Horario de atención: Lunes a Sábado de 8:00 am a 6:00 pm</h2>
-        </div>
+      </header>
 
-      </div>
-    </footer>
+      <main>
+        <div class="container-main">
+          <section class="tituloFormulario">
+            <h2>Contáctanos</h2>
+          </section>
+        
+          <form class="contacto">
+            <fieldset>
+              <div class="grupo">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" class="campo">
+              </div>
+              <div class="grupo">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="campo">
+              </div>
+              <div class="grupo">
+                <label for="telefono">Telefono/Celular</label><br>
+                <input type="number" id="telefono" name="telefono" class="campo">
+              </div>
+              <div class="grupo">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="15" cols="70" class="campo"></textarea><br><br>
+              </div>
+              <input type="submit" id="Enviar" name="enviar" class="boton">
+            </fieldset>
+          </form>
+        </div>
+      </main>  
+      <footer>
+        <div class="contenedor-footer">
+          <div class="iconos">
+            <img class="IMG_footer" src="Imagenes/instagram.svg">
+            <img class="IMG_footer" src="Imagenes/facebook.svg">
+          </div>
+          <div class="textofooter">
+            <h2 class="titulofooter">Dirección: Transversal 2c #14c 38. Villas del Sutagao. Fusagasugá-Cundinamarca</h2>
+            <h2 class="titulofooter">Teléfono/Whatsapp: <i class="bi bi-whatsapp">3132371940</i></h2>
+            <h2 class="titulofooter">Horario de atención: Lunes a Sábado de 8:00 am a 6:00 pm</h2>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../javaScript/menu.js"></script>
   </div>
-
 </body>
 </html>
