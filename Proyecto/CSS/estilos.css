@@ -232,20 +232,13 @@ main{
     border-radius: 3px;
 }
 .imagen_galeria{
-    width: 45%;
+    width: 30%;
     position: relative;
     height: 400px;
     margin-bottom: 5px;
     padding: 10px;
     box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, .75);
 }
-/*
-.imagen_galeria img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 30px;
-} */
 .imagen_galeria-fresa{
     width: 30%;
     position: relative;
@@ -277,26 +270,6 @@ img{
     padding: 10px;
     box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, .75);
 }
-
-/* otros estilos*/
-
-.contenedorPaleta{
-    display: flex;
-    width: 70%;
-    padding-top: 50px;
-    margin: auto;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border-radius: px;
-}
-.contenedorPaleta .imagen{
-    width: 25%;
-    position: relative;
-    height: 300px;
-    margin-bottom: 5px;
-    padding: 15px;
-    box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, .75);
-}
 .contenedorCorazon{
     display: flex;
     width: 70%;
@@ -307,39 +280,15 @@ img{
     border-radius: 5px;
 }
 .contenedorCorazon .imagen{
-    width: 32%;
+    width: 30%;
     position: relative;
     height: 400px;
     margin-bottom: 2px;
     padding: 10px;
     box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, .75);
 }
-.contenedorVariedad{
-    display: flex;
-    width: 70%;
-    padding-top: 50px;
-    margin: auto;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border-radius: 5px;
-}
-.contenedorVariedad .imagen{
-    width: 32%;
-    position: relative;
-    height: 500px;
-    margin-bottom: 3px;
-    padding: 10px;
-    box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, .75);
-}
-
-.imagenVertical img{
-    width:100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 30px;
-}
 .contenedorVertical .imagenLicor{
-    width: 33%;
+    width: 30%;
     position: relative; 
     height: 450px;
     margin-bottom: 10px;
@@ -352,22 +301,63 @@ img{
     object-fit: cover;
     border-radius: 30px;
 }
-.contenedorInicial{
+.contenedor_sorpresa{
     display: flex;
-    width: 75%;
+    width: 70%;
     padding-top: 50px;
     margin: auto;
     flex-wrap: wrap;
     justify-content: space-around;
-    border-radius: 3px;
+    border-radius: 5px;
 }
-.contenedorInicial .imagen{
-    width: 32%;
-    position: relative; 
-    height: 450px;
-    margin-bottom: 10px;
+.contenedor_sorpresa .imagen_sorpresa{
+    width: 30%;
+    position: relative;
+    height: 400px;
+    margin-bottom: 2px;
     padding: 10px;
     box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, .75);
+}
+.contenedorPaleta{
+    display: flex;
+    width: 70%;
+    padding-top: 50px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: px;
+}
+.contenedorPaleta .imagen{
+    width: 30%;
+    position: relative;
+    height: 300px;
+    margin-bottom: 5px;
+    padding: 15px;
+    box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, .75);
+}
+
+.contenedorVariedad{
+    display: flex;
+    width: 70%;
+    padding-top: 50px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+.contenedorVariedad .imagen{
+    width: 30%;
+    position: relative;
+    height: 500px;
+    margin-bottom: 3px;
+    padding: 10px;
+    box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, .75);
+}
+.imagenVertical img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
 }
 .overlay{
     position: absolute;
@@ -390,6 +380,14 @@ img{
     text-align: center;
     transform: translate(-50%, -50%);
 }
+.imagen_sorpresa:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+}
+.imagen:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+}
 .imagen_galeria:hover .overlay{
     height: 100%;
     cursor: pointer;
@@ -405,6 +403,37 @@ img{
 .imagenLicor:hover .overlay{
     height: 100%;
     cursor: pointer;
+}
+
+/*Estilos main - Tienda */
+.container-products{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.product{
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+.product__img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.product__title{
+    text-align: center;
+}
+.product__price{
+    color: #735d78;
+    font-weight: bold;
+}
+.product__icon{
+    display: block;
+    margin: 10px 0;
+}
+.product:hover .product__icon{
+    color: #e8c2ca;
 }
 
 
@@ -726,6 +755,16 @@ fieldset{
     /* main galeria */
     .imagen_galeria{
         height: 300px;
+    }
+    
+    /* Estilos tienda */
+
+    .container-products{
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+    .product__img{
+        height: 200px;
     }
 }
 
