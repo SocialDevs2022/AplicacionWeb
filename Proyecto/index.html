@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
     
     <title>Freya - Dulces Creaciones</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="../CSS/estilos.css">
     <link rel="stylesheet" href="../CSS/slider.css">
-    <!-- Las siguientes 3 líneas corresponden a la asignación de estilo de letra desde Google Fonts-->
+    <!-- Las siguientes líneas corresponden a la asignación de estilo de letra desde Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@500&family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
-    <!-- -->
+    
   </head>
   <body>
     <div id="container_ppal">
@@ -24,7 +24,7 @@
               <img class="img-logo" src="../Imagenes/Logo.png" alt="Freya"/> 
             </div>
             <div class="contenedor-menu">
-              <span class="icon-menu" id="btn-menu"><i class="bi bi-list"></i></span>
+              <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
               <nav class="navegacion" id="navegacion">
                 <ul class="menu">
                   <li><a href="../galeria.html">Galeria</a>
@@ -88,9 +88,11 @@
             </div>
             
             <section class="freyaEs">
-              <h2>Freya Dulces Creaciones</h2>
-              <p>Es un emprendimiento que nace el 14 de febrero del 2020, con el propósito de dar un toque de amor y dulzura en cada rincón del corazón.
-                Sus productos como la fresa, la torta y oreos son bañados por chocolate, creando esa sensación de placer en el paladar
+              <div class="container_main-textFreya">
+                <h2>Freya Dulces Creaciones</h2>
+                <p>Es un emprendimiento que nace el 14 de febrero del 2020, con el propósito de dar un toque de amor y dulzura en cada rincón del corazón.
+                  Sus productos como la fresa, la torta y oreos son bañados por chocolate, creando esa sensación de placer en el paladar </p>
+              </div>
             </section>
             <section class="section_video">
               <div class="container_video">
@@ -100,16 +102,19 @@
                 </video>
               </div>
               <div class="textVideo">
-                <h2>Personaliza cada detalle seleccionando: </h2>
-                <h2> color, frase, motivo, producto, licor, globo, dulce, relleno</h2>
+                <h2>Personaliza cada detalle con: </h2>
+                <h2> color, frase, motivo, producto, licor, globo, dulce, relleno.</h2>
               </div>
-            </section>
-            <section>
-              <div class="textWhatsapp">
-                <h3>Haz tu pedido por </h3>
-                <h3>WhatSapp 3132371940</h3>
-                <h4>Un asesor te guiará</h4>
-              </div>
+              <section class="contenedor_whatsapp">
+                <div class="contenedor_whatsapp-icon">
+                  <i class="icon-whatsapp fab fa-whatsapp"></i>  
+                </div>
+                <div class="contenedor_textWhatsapp">
+                  <h3>Haz tu pedido por </h3>
+                  <h2 class="textWhatsapp">WhatSapp</h2>
+                  <div class="numeroTel">3132371940</div>
+                </div>
+              </section>
             </section>
           </div>
         </main>
@@ -119,12 +124,22 @@
               <img class="IMG_footer" src="../Imagenes/instagram.svg">
               <img class="IMG_footer" src="../Imagenes/facebook.svg">
             </div>
-            <div class="textofooter">
-              <h2 class="titulofooter">Dirección: Transversal 2c #14c 38. Villas del Sutagao. Fusagasugá-Cundinamarca</h2>
-              <h2 class="titulofooter">Teléfono/Whatsapp: <i class="bi bi-whatsapp">3132371940</i></h2>
-              <h2 class="titulofooter">Horario de atención: Lunes a Sábado de 8:00 am a 6:00 pm</h2>
+            <div class="contenedor_footer_direccion">
+              <div class="text_direccion">
+                <h2>Dirección:</h2>
+                <p>Transversal 2c #14c 38. Villas del Sutagao. Fusagasugá-Cundinamarca</p>
+              </div>
+              <div class="text_telefono">
+                <span class="footer_icon-whatsapp"><i class="fab fa-whatsapp"></i></span>
+                <h2  class="whatsapp">Whatsapp</h2>
+                <p>3132371940</p>
+              </div>
+              <div class="text_horario">
+                <h2>Horario:</h2> 
+                <p>Lunes a Sábado</p>
+                <p>8:00 am a 6:00 pm</p>
+              </div>
             </div>
-
           </div>
         </footer>
       </div>

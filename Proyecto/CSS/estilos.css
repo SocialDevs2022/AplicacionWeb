@@ -5,6 +5,8 @@
 }
 html, body{
     height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EED2D8;
 }
 #container_ppal, #containerPage{
     height: 100%;
@@ -13,17 +15,18 @@ html, body{
     width: 100%;
 }
 #containerPage{
-    width: 1280px;
+    width: 2048px;
     margin: 0 auto;
 }
 
 /* Estilo encabezado */
 
 .contenedor-header{
-    display: flex;
     background-image: url(/Imagenes/fondo/pincelada.png);
-    background-color: #f9f0f2;
+    background-color: #fff0f3;
     background-repeat: no-repeat;
+    background-size: 100% 110%;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
@@ -36,7 +39,7 @@ html, body{
     margin-left: 3%;
 }
 .img-logo{
-    width: 130%;
+    width: 90%;
     height: 100%;
     object-fit: cover;
     overflow: hidden;
@@ -47,22 +50,21 @@ html, body{
 
 .contenedor-menu{
     width: 70%;
-    display: inline-block;
-    justify-self: right;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
 }
 .navegacion{
-    display: block;
     width: 100%;
     text-align: center;
-    font-family: 'Montserrat';
-    font-size: 17px;
+    font-size: 25px;
 }
 .navegacion ul{
     list-style: none;
 }
 .menu{
     position: absolute;
-    top: 10%;
+    top: 8%;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -70,6 +72,7 @@ html, body{
 .menu li{
     display: inline-block;
     padding: 0 1.2em;
+    flex-grow: 1;
 }
 .menu > li > a{
     padding: 8px 15px;
@@ -119,78 +122,106 @@ html, body{
 /* Estilos main */
 
 main{
-    background-color: #f9f0f2;
+    background-color: #fff0f3;
 }
 .container-main{
+    display: flex;
+    flex-wrap: wrap;
     width: 80%;
     margin: auto;
-    padding: 50px 0;
+    padding: 3% 0;
 }
 
 /* Estilos main index */
 
 .freyaEs{
+    background-color:#EED2D8;
+    width: 170%;
+    height: 300px;
     text-align: center;
-    margin: 5% 20%;
+    margin: 10% -207px; 
+}
+.container_main-textFreya{
+    display: block;
+    margin: 4% 30%;
 }
 .freyaEs h2{
-    font-size: 40px;
+    font-size: 35px;
+    color: #735d78;
 }
 .freyaEs p{
     font-size: 20px;
-    margin-top: 15px;
+    margin: 25px 0;
+    color: #735d78;
 }
 .section_video{
     display: flex;
     width: 100%;
-    margin: auto;
     padding-bottom: 3%;
-    border-bottom: 1px solid #555;
 }
 .container_video{
-    width: 150%;
-    height: 100%;
+    width: 60%;
+    padding: 10px;
 }
 .video{
     width: 100%;
-    max-width: 150%;
 }
 .textVideo {
-    font-family: 'Architects Daughter', cursive;
+    display: block;
     font-size: 20px;
     text-align: center;
-    letter-spacing: 10px;
     color: #735d78;
     margin: auto;
-    padding-left: 15%;
+    width: 50%;
+    padding: 80px;  
 }
-.textWhatsapp {
+.contenedor_whatsapp{
+    display: flex;
+    width: 40%;
+    /* height: 72%; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid #555;
+    margin: auto;
+    padding: 5% 0;
+}
+.contenedor_whatsapp-icon{
+    margin: 0 auto;
+}
+.icon-whatsapp{
     display: block;
-    font-family: 'Ephesis', cursive;
-    font-size: 40px;
+    font-size: 7em;
+    color: #00B34E;
+}
+.contenedor_textWhatsapp {
+    display: block;
     text-align: center;
     color: #735d78;
-    letter-spacing: 10px;
-    width: 70%;
-    margin: 50px auto 0;
+    width: 90%;
+    margin: 0 auto;
 }
-.textWhatsapp h4{
+.contenedor_textWhatsapp h3{
     font-size: 30px;
 }
-nav.index{
-    background-color: #F7D1CD;
-    width: 100%;
-    height: 20px;
+.textWhatsapp{
+    font-size: 53px;
+    color: #00B34E;
 }
-a:link{   
-    text-align: center;
-    text-decoration: none;
+.numeroTel{
+    background: #00B34E;
+    font-size: 45px;
+    padding: 20px 0;
+    color:white;
 }
+
 
 /* Estilos main Galeria */
 
 .contenedor_galeria{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .galeria{
     display: flex;
@@ -208,11 +239,43 @@ a:link{
     padding: 10px;
     box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, .75);
 }
+/*
 .imagen_galeria img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 30px;
+} */
+.imagen_galeria-fresa{
+    width: 30%;
+    position: relative;
+    height: 300px;
+    margin-bottom: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, .75);
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.contenedorVertical{
+    display: flex;
+    width: 70%;
+    padding-top: 50px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 3px;
+}
+.contenedorVertical .imagenVertical{
+    width: 25%;
+    position: relative; 
+    height: 400px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, .75);
 }
 
 /* otros estilos*/
@@ -268,23 +331,7 @@ a:link{
     padding: 10px;
     box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, .75);
 }
-.contenedorVertical{
-    display: flex;
-    width: 70%;
-    padding-top: 50px;
-    margin: auto;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border-radius: 3px;
-}
-.contenedorVertical .imagenVertical{
-    width: 33%;
-    position: relative; 
-    height: 550px;
-    margin-bottom: 10px;
-    padding: 10px;
-    box-shadow: 0px 0px 3px 0px rgb(0, 0, 0, .75);
-}
+
 .imagenVertical img{
     width:100%;
     height: 100%;
@@ -344,6 +391,10 @@ a:link{
     transform: translate(-50%, -50%);
 }
 .imagen_galeria:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+}
+.imagen_galeria-fresa:hover .overlay{
     height: 100%;
     cursor: pointer;
 }
@@ -452,37 +503,85 @@ fieldset{
 .contenedor-footer{
     display: flex;
     background-image: url(/Imagenes/fondo/footer.png);
-    background-color: #f9f0f2;
+    background-color: #fff0f3;
     background-repeat: no-repeat;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
     height: 200px;
-    flex-direction: column;
 }
-.titulofooter{
-    font-family: 'Montserrat';
+.contenedor_footer_direccion{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 70%;
+    text-align: center;
+}
+.text_direccion{
+    width: 30%;
+    font-size: 18px;
+    color: white;
+    margin: auto 0;
+    padding-top: 15px;
+}
+.text_direccion h2{
+    padding-bottom: 10px;
+}
+.text_direccion p{
+    font-size: 23px;
+    padding: 0 15px;
+}
+.text_telefono{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
     font-size: 15px;
     color: white;
-    letter-spacing: 2px;
-    text-align: center;
+    margin: auto 0;
+    justify-content: center;
+}
+.footer_icon-whatsapp{
+    color: green;
+    font-size: 30px;
+    padding: 8% 8% 0 8%;
+}
+.whatsapp{
+    display: block;
+    font-size: 30px;
+    padding-top: 8%;
+}
+.text_telefono p{
+    padding: 10px;
+    font-size: 25px;
+}
+.text_horario{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    font-size: 18px;
+    color: white;
+    margin: auto 0;
+    justify-content: center;
+    flex-direction: column;
+}
+.text_horario h2{
+    padding-bottom: 10px;  
+}
+.text_horario p{
+    font-size: 20px;
 }
 .iconos{
     float: left;
-    margin: 100px 0 100px 0;
-}
-.textofooter{
-    float: left;
-    margin:100px 0 100px 0;
+    margin: auto 0 auto auto ;
 }
 .IMG_footer{
     width: 40px;
     height: 40px;
     object-fit: cover;
-    margin: 15px;
+    margin-right: 50px;
 }
 
 /* Responsive */
+
 @media (max-width: 768px){
     html{
         overflow-x: hidden;
@@ -492,23 +591,23 @@ fieldset{
         height: 100%;
     }
     .contenedor-header{
+        flex-wrap: wrap;
         flex-direction: column;
     }
     .contenedor-logo{
+        width: 30%;
         padding-left: 8%;
     }
     .contenedor-menu{
         width: 60%;
     }
     .icon-menu{
-        width: 7%;
         font-size: 2em;
-        border: 1px solid #454546;
         display: block;
         padding: 5px;
         cursor: pointer;
-        margin-top: 10%;
-        margin-left: 80%;
+        margin-left: 70%;
+        margin-top: 15%;
         z-index: 9999999;
     }
     .icon-menu:hover{
@@ -517,7 +616,6 @@ fieldset{
     .navegacion{
         opacity: 0;
         visibility: hidden;
-        transition: all 0.5s;
         z-index: 999;
     }
     .menu{
@@ -537,14 +635,20 @@ fieldset{
         opacity: 5;
         visibility: visible;
     }
+    .imagen_galeria{
+        height: 250px;
+    }
+    .freyaEs{
+        height: 210px;
+    }
     .section_video{
         flex-direction: column;
     }
     .container_video{
-        width: 60%;
         margin: auto;
     }
     .video{
+        padding-bottom: 40px;
         margin: auto;
     }
     .textVideo{
@@ -565,12 +669,11 @@ fieldset{
         padding-top: 80px;
         padding-left: 40px;
     }
-    .textofooter{
-        padding-top: 30px;
+    .contenedor_textWhatsapp h3{
+        font-size: 0.5em;
     }
-    .textofooter h2{
-        font-size: 8px;
-        padding-top: 10px;
+    .textWhatsapp{
+        font-size: 1.5em;
     }
 }
 
@@ -582,12 +685,11 @@ fieldset{
         width: 100%;
         height: 100%;
     }
-    .contenedor-menu{
-        width: 65%;
-    }
     .contenedor-logo{
-        width: 20%;
         margin-left: 1%;
+    }
+    .navegacion{
+        margin-left: 0;
     }
     .menu li{
         padding: 0 8px;
@@ -603,16 +705,72 @@ fieldset{
     }
 
     /* main index */
-
+    .container_video{
+        padding: 0;
+    }
     .textVideo{
         font-size: 80%;
-        padding-left: 5px;
+        padding:0;
+        margin: auto;
     }
-    .textWhatsapp h3{
-        font-size: 80%;
+    .contenedor_textWhatsapp h3{
+        font-size: 1.5em;
     }
+    .textWhatsapp{
+        font-size: 2.5em;
+    }
+    .numeroTel{
+        font-size: 2em;
+    }
+
     /* main galeria */
     .imagen_galeria{
         height: 300px;
     }
+}
+
+@media (max-width: 1440px){
+    html{
+        overflow-x: hidden;
+    }
+    #containerPage{
+        width: 100%;
+        height: 100%;
+    }
+    .navegacion{
+        font-size: 17px;
+    }
+    .container-main{
+        padding: 50px 0;
+    }
+    .freyaEs h2{
+        font-size: 20px;
+    }
+    .freyaEs p{
+        font-size: 16px;
+    }
+    .section_video{
+        flex-wrap:wrap;
+    }
+    .container_video{
+        min-width: 30%;
+    }
+    .contenedor_whatsapp{
+        min-width: 30%;
+        margin-top: 10%;
+        padding: 5% 0;
+    }
+    .footer_icon-whatsapp{
+        font-size: 20px;
+    }
+    .whatsapp{
+        padding-top: 15px;
+    }
+    .contenedor_footer_direccion h2{
+        font-size: 20px;
+    }
+    .contenedor_footer_direccion p{
+        font-size: 15px;
+    }
+
 }
