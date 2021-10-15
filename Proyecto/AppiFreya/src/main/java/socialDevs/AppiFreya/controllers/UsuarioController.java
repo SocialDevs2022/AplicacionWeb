@@ -50,12 +50,6 @@ public class UsuarioController {
         return this.usuarioService.obtenerPorEmail(email);
     }
 
-    /* Se realiza la consulta por nombre con query */
-    @GetMapping("/query")
-    public ArrayList<UsuarioModel> obtenerPorNombre(@RequestParam("nombre") String nombre){
-        return this.usuarioService.obtenerPorNombre(nombre);
-    }
-
     /* Eliminando un Usuario*/
     @DeleteMapping(path = "/{id}")
     public String eliminarPorID(@PathVariable("id") long id){
